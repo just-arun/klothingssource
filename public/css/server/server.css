@@ -1,0 +1,46 @@
+.def-color {
+  background: #6600cc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.def-color:hover {
+  background: #5700ad;
+}
+
+.center-btn {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.h-200 {
+  height: 200px;
+}
+
+.custome-cart .custome-cart-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 160px;
+  height: 160px;
+}
+
+.custome-cart .custome-cart-image img {
+  height: 80px;
+  width: 80px;
+}
+
+.def-color, .def-color:hover {
+  background: #6600cc;
+}
+
+.squar-box {
+  height: 350px;
+  width: 350px;
+}
+/*# sourceMappingURL=server.css.map */

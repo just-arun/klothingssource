@@ -1,0 +1,37 @@
+
+<% include layouts/header %>
+<h1 class="center">Regester</h1>
+<br>
+
+<%- messages('message', locals) %>
+<br>
+<br>
+<div class="row center container">
+    <div class="">
+        <div class="row center">
+            <form action="/admin/users/regester" class="row" method="post">
+                <div class="input-field col s12">
+                    <input id="user_name" name="name" required type="text" class="validate">
+                    <label for="user_name">User Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="email" name="email" required type="email" class="validate">
+                    <label for="email">User email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password" name="password" required type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="password2" name="password2" required type="password" class="validate">
+                    <label for="password2">Password</label>
+                </div>
+                <div class="input-field col s12">
+                    <button type="submit" class="btn">Regester</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include layouts/footer %>

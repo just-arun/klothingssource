@@ -1,0 +1,32 @@
+<% include layouts/header %>
+
+
+<div class="deals-view row">
+    <h1>this is deals view</h1>
+    <a href="/admin/users/api/deals/add" class="col l12 btn">add details</a>
+
+    <br>
+    <div class="col l12 m12 s12">
+        <div class="row">
+            <% data.forEach(shit=>{%>
+            <div class="collection-item col l12 m12 s12 pos-rela">
+                <img src="<%=shit.img%>" alt="" class="left">
+                <span class="title">Title</span>
+                <div class="container">
+                    title: <%=shit.title%>
+                    <sub class="red-text">by:<%=shit.author%></sub> <br>
+                    description: <%= shit.description%> <br>
+                    number: <%= shit.number%> <br>
+                    expire date: <%= shit.expire%> <br>
+                    catogery: <%= shit.forW%> <br>
+                    link: <%=shit.link%>
+                </div>
+                <a href="" class="right top-right top-right-5 pos-abs"><i class="delete-item-deals material-icons black-text" data-id="<%=shit.id%>">close</i></a>
+            </div>
+            <%}) %>
+        </div>
+    </div>
+</div>
+
+
+<% include layouts/footer %>

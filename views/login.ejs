@@ -1,0 +1,23 @@
+
+<% include layouts/header %>
+<h1 class="center">Log In</h1>
+<br>
+
+<%- messages('message', locals) %>
+<br>
+<br>
+<form action="/admin/users/login" class="row" method="post">
+    <div class="input-field col s6">
+        <input id="user_name" name="email" required type="text" class="validate">
+        <label for="user_name">User Name</label>
+    </div>
+    <div class="input-field col s6">
+        <input id="password" name="password" required type="password" class="validate">
+        <label for="password">Password</label>
+    </div>
+    <div class="input-field col s12">
+        <button type="submit" class="btn">Log In</button>
+    </div>
+</form>
+
+<% include layouts/footer %>

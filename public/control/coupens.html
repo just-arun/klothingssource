@@ -1,0 +1,93 @@
+<div class="deals-wrapper">
+    <h5 class="center">Coupens</h5>
+    <div class="row ">
+    <div class="col l3 hide-on-med-and-down">
+        <ul class="collection w-150">
+            <li class="collection-item">
+                <label ng-click="all()">
+                    <input name="group1" checked type="radio" />
+                    <span>All</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="WomensCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Womens</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="MensCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Mens</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="AccessoriesCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Accessories</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="SunglassCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Sunglass</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="FootwearCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Footewar</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="BagesCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Bages</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="GiftCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Gift</span>
+                </label>
+            </li>
+            <li class="collection-item">
+                <label ng-click="JewelleryCatogery()">
+                    <input name="group1" type="radio" />
+                    <span>Jewellery</span>
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="col l9 m12 s12">
+        <div class="row">
+            <div class="col l10 m12 s12" ng-repeat="shit in data | filter: searcBoxOne">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="{{shit.img}}">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content row">
+                            <div class="col l8">
+                                <p>{{shit.description}} </p>
+                            </div>
+                            <div class="right col l4">
+                                <div class="row">
+                                    <a href="#coupens" ng-click="thisisshit(shit._id)" class="modal-trigger center col l12 btn def-color">Get Code</a>
+                                </div>
+                                <br>
+                                <p class="center font-10">You will be redirected to the Brand Site.</p>
+                                <br><br>
+                                <b class=" font-10" style=" position: absolute; bottom: 10px;right: 5px; margin-right: 10px; ">Expired on:  {{shit.expire}}</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="carousel">
+        <a ng-repeat="shit in brands" href="" class="carousel-item"><img src="{{shit}}" alt=""></a>
+    </div>
+</div>

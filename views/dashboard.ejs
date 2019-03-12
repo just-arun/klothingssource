@@ -1,0 +1,17 @@
+<% include layouts/header %>
+<h1>dashboard</h1>
+
+<%- messages('message', locals) %>
+
+<div class="row">
+    <a href="/admin/users/api/mens/view" class="col squar-box l6 m6 btn-large def-color h-200">mens</a>
+    <a href="/admin/users/api/womens/view" class="col squar-box l6 m6 btn-large def-color h-200">womens</a>
+    <a href="/admin/users/api/accessories/view" class="col squar-box l6 m6 btn-large def-color h-200">accessories</a>
+    <a href="/admin/users/api/deals/view" class="col squar-box l6 m6 btn-large def-color h-200">deals</a>
+    <a href="/admin/users/api/coupens/view" class="col squar-box l6 m6 btn-large def-color h-200">coupens</a>
+    <a href="/admin/users/api/email" class="col squar-box l6 m6 btn-large def-color h-200">email</a>
+</div>
+
+
+
+<% include layouts/footer %>

@@ -1,0 +1,45 @@
+<div class="place-holder-div"></div>
+<div class="container pos-relative top-minus-60">
+    <div class="details-wrapper " >
+        <div class="all-img-sec">
+            <div class="min-img-sec">
+                <div class="mini-img" ng-repeat="ints in details.img"> 
+                    <img ng-click="selectedImg(ints)" ng-src="{{ints}}"  alt=""> 
+                </div>
+            </div>
+            <div class="detail-img-main">
+                <img id="zoom_04" src="{{mainImg}}" class="materialboxed" style="width: 100%;" alt="">
+            </div>
+        </div>
+        <div class="details-text pos-rela">
+            <div class="">
+                <h6><b class="def-font-cap">{{details.name}} </b></h6>
+                <h6 style="padding:10px 10px 10px 0;"><b class="def-font-cap" style="font-size: 23px;">Rs.{{details.ourPrice}}</b> <span class="line-through" style="font-size: 14px;position: relative;bottom: 2px;">Rs.{{details.marketPrice}} </span> <span class="descount-tag">{{details.discount}}% OFF</span> </h6>
+                <div>
+                    <p style="position: relative;top: -5px;"><h6><b class="pad-r-10">Color :</b></h6>
+                        <ul class=" dis-fle-wra" style="position: relative;top: -7px;">  
+                            <li ng-repeat=" thiscl in details.colorValue "> 
+                                <div class="color-box waves-effect {{thiscl}}"></div> 
+                            </li>
+                        </ul></p>
+                    <p style="position: relative;top: -8px;"> <h6><b class="pad-r-10">Size: </b></h6>
+                        <ul class=" dis-fle-wra" style="position: relative;top: -7px;">
+                            <li ng-repeat=" size in details.itemSize ">
+                                <div class="pad-r-10 border-pad-1-10"> {{size}}</div> 
+                            </li>
+                        </ul>
+                    </p>
+                    <h6 style="position: relative;top: -2px"><b>Description</b>:</h6>
+                    <p style="position: relative;top: -9px"> {{details.description}} </p>
+                    <h6 style="position: relative;top: -24px"><b>Merchent: </b> <a href="{{details.merchentUrl}}" target="_blank"><img class="merchent" ng-src="{{details.merchentName}}" alt=""></a> </h6>
+                    <div style="position: relative;top: -8px;">
+                        <a href="" ng-click="addedItem(details);trigerToster();"><i class="material-icons carts-btn" style="padding: 6px; margin-right: 5px;">favorite</i></a> 
+                        <!-- <b class="white-text">__</b> -->
+                        <a href="{{details.merchentUrl}}" target="_blank" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fave-toster">Your Favourite</div>
+</div>

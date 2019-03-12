@@ -1,0 +1,129 @@
+<% include layouts/header %>
+
+
+<h1>Add Deals</h1>
+<a href="/admin/users/api/deals/view" class="col l12 btn">Add Deals</a>
+
+<br>
+<br>
+<form action="/admin/users/api/deals/add" method="post">
+<div class="row">
+    <div class="input-field col l6">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="input_text_1" type="text" data-length="30" required name="title">
+        <label for="input_text_1">Prodect title</label>
+    </div>
+    <div class="input-field col l6">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="input_text_2" type="text" data-length="30" required name="link">
+        <label for="input_text_2">Prodect link</label>
+    </div>
+    
+    <div class="input-field col l6">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="input_text_4" list="merchents" type="text" data-length="30" required name="image">
+        <label for="input_text_4">Prodect brand</label>
+        <datalist id="merchents">
+            <option value="./../assets/page/flip-logo/100yellow.png">100yellow</option>
+            <option value="./../assets/page/flip-logo/addidas.png">addidas</option>
+            <option value="./../assets/page/flip-logo/ajio.png">ajio</option>
+            <option value="./../assets/page/flip-logo/aliexpress.png">aliexpress</option>
+            <option value="./../assets/page/flip-logo/amazon.in.png">amazon.in</option>
+            <option value="./../assets/page/flip-logo/andindia.png">andindia</option>
+            <option value="./../assets/page/flip-logo/aristocrat.png">aristocrat</option>
+            <option value="./../assets/page/flip-logo/badtamees.png">badtamees</option>
+            <option value="./../assets/page/flip-logo/bata.png">bata</option>
+            <option value="./../assets/page/flip-logo/biba.png">biba</option>
+            <option value="./../assets/page/flip-logo/bluestone.png">bluestone</option>
+            <option value="./../assets/page/flip-logo/capresebags.png">capresebags</option>
+            <option value="./../assets/page/flip-logo/carlton.png">carlton</option>
+            <option value="./../assets/page/flip-logo/charleskeith.png">charleskeith</option>
+            <option value="./../assets/page/flip-logo/chumbak.png">chumbak</option>
+            <option value="./../assets/page/flip-logo/clovia.png">clovia</option>
+            <option value="./../assets/page/flip-logo/coolwinks.png">coolwinks</option>
+            <option value="./../assets/page/flip-logo/crocs.png">crocs</option>
+            <option value="./../assets/page/flip-logo/dailyobjects.png">dailyobjects</option>
+            <option value="./../assets/page/flip-logo/decathlon.png">decathlon</option>
+            <option value="./../assets/page/flip-logo/dresslily.png">dresslily</option>
+            <option value="./../assets/page/flip-logo/exclusivelane.png">exclusivelane</option>
+            <option value="./../assets/page/flip-logo/EZMall.png">EZMall</option>
+            <option value="./../assets/page/flip-logo/Fabindia.png">Fabindia</option>
+            <option value="./../assets/page/flip-logo/flipkart.png">flipkart</option>
+            <option value="./../assets/page/flip-logo/giftalove.png">giftalove</option>
+            <option value="./../assets/page/flip-logo/Giftsmate.png">Giftsmate</option>
+            <option value="./../assets/page/flip-logo/gocolors.png">gocolors</option>
+            <option value="./../assets/page/flip-logo/haanum.png">haanum</option>
+            <option value="./../assets/page/flip-logo/Hijabenka.png">Hijabenka</option>
+            <option value="./../assets/page/flip-logo/Homeshop18.png">Homeshop18</option>
+            <option value="./../assets/page/flip-logo/iBhejo.png">iBhejo</option>
+            <option value="./../assets/page/flip-logo/igp.png">igp</option>
+            <option value="./../assets/page/flip-logo/India CircuIndias.png"></option>
+            <option value="./../assets/page/flip-logo/iomoto.png">iomoto</option>
+            <option value="./../assets/page/flip-logo/jabong.png">jabong</option>
+            <option value="./../assets/page/flip-logo/jockey.png">jockey</option>
+            <option value="./../assets/page/flip-logo/john jacobjohns.png"></option>
+            <option value="./../assets/page/flip-logo/kalki.png">kalki</option>
+            <option value="./../assets/page/flip-logo/koovs.png">koovs</option>
+            <option value="./../assets/page/flip-logo/lenskart.png">lenskart</option>
+            <option value="./../assets/page/flip-logo/liberty.png">liberty</option>
+            <option value="./../assets/page/flip-logo/lifestyle.png">lifestyle</option>
+            <option value="./../assets/page/flip-logo/limeroad.png">limeroad</option>
+            <option value="./../assets/page/flip-logo/lovzme.png">lovzme</option>
+            <option value="./../assets/page/flip-logo/markryden.png">markryden</option>
+            <option value="./../assets/page/flip-logo/maurices.png">maurices</option>
+            <option value="./../assets/page/flip-logo/maxfashion.png">maxfashion</option>
+            <option value="./../assets/page/flip-logo/mdreams.png">mdreams</option>
+            <option value="./../assets/page/flip-logo/melorra.png">melorra</option>
+            <option value="./../assets/page/flip-logo/mydreamstore.png">mydreamstore</option>
+            <option value="./../assets/page/flip-logo/myntra.png">myntra</option>
+            <option value="./../assets/page/flip-logo/nnnow.png">nnnow</option>
+            <option value="./../assets/page/flip-logo/planetsuperheroes.png">planetsuperheroes</option>
+            <option value="./../assets/page/flip-logo/prettysecrets.png">prettysecrets</option>
+            <option value="./../assets/page/flip-logo/reddressboutique.png">reddressboutique</option>
+            <option value="./../assets/page/flip-logo/reebok.png">reebok</option>
+            <option value="./../assets/page/flip-logo/shein.png">shein</option>
+            <option value="./../assets/page/flip-logo/shopclues.png">shopclues</option>
+            <option value="./../assets/page/flip-logo/shoppersstop.png">shoppersstop</option>
+            <option value="./../assets/page/flip-logo/snapdeal.png">snapdeal</option>
+            <option value="./../assets/page/flip-logo/StyleFiesta.png">StyleFiesta</option>
+            <option value="./../assets/page/flip-logo/tatacliq.png">tatacliq</option>
+            <option value="./../assets/page/flip-logo/thelabellife.png">thelabellife</option>
+            <option value="./../assets/page/flip-logo/themancompany.png">themancompany</option>
+            <option value="./../assets/page/flip-logo/velvetcase.png">velvetcase</option>
+            <option value="./../assets/page/flip-logo/voylla.png">voylla</option>
+            <option value="./../assets/page/flip-logo/wildcaraft.png">wildcaraft</option>
+            <option value="./../assets/page/flip-logo/zivame.png">zivame</option>
+        </datalist>
+    </div>
+
+    <div class="input-field col l6">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="input_text_5" list="catogery" type="text" data-length="30" required name="forW">
+        <label for="input_text_5">Prodect for</label>
+        <datalist id="catogery">
+            <option value="women">women</option>
+            <option value="men">men</option>
+            <option value="accessories">accessories</option>
+            <option value="sunglass">sunglass</option>
+            <option value="footwear">footwear</option>
+            <option value="bages">bages</option>
+            <option value="gifts">gifts</option>
+            <option value="jewellery">jewellery</option>
+        </datalist>
+    </div>
+    <div class="input-field col l6">
+        <i class="material-icons prefix">mode_edit</i>
+        <textarea id="textarea2" class="materialize-textarea" required name="description" data-length="120"></textarea>
+        <label for="textarea2">Description</label>
+    </div>
+    <div class="input-field col l6">
+        <i class="material-icons prefix">date_range</i>
+        <input type="text" class="datepicker"  name="expire" id="date">
+        <label for="date"></label>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+</div>
+</form>
+
+
+<% include layouts/footer %>

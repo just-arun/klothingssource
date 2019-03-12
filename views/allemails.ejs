@@ -1,0 +1,18 @@
+<% include layouts/header %>
+
+<table>
+    <thead>
+        <th>
+            <td> <h1>All mails </h1></td>
+        </th>
+    </thead>
+    <tbody>
+        <%data.forEach((da)=>{%>
+        <tr>
+            <td> <%= da.email %> </td>
+        </tr>
+        <%})%>
+    </tbody>
+</table>
+
+<% include layouts/footer %>

@@ -1,0 +1,203 @@
+
+<% include layouts/header %>
+<h3 class="center">Add Prodects</h3>
+
+<%- messages('message', locals) %>
+<br><br>
+<div class="row"><a href="/admin/users/api/mens/view" class="col s12 btn">view mens items</a></div>
+<br>
+<div class="row">
+    <form class="col s12" enctype="multipart/form-data" action="/admin/users/api/mens/addItem" method="post">
+        <div class="col s12 input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <input id="input_text_1" type="text" required name="name" maxlength="70"data-length="10">
+            <label for="input_text_1">Prodect Name</label>
+        </div>
+        <div class="col s12 input-field">
+            
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mode_edit</i>
+              <input id="input_text_2" type="text" list="merchentNameli" data-length="30" required name="merchentName">
+              <label for="input_text_2">Merchent Name</label>
+              <datalist id="merchentNameli">
+                <option value="./../assets/page/brand-logo/100yellow.png">100yellow</option>
+                <option value="./../assets/page/brand-logo/addidas.png">addidas</option>
+                <option value="./../assets/page/brand-logo/ajio.png">ajio</option>
+                <option value="./../assets/page/brand-logo/aliexpress.png">aliexpress</option>
+                <option value="./../assets/page/brand-logo/amazon.in.png">amazon.in</option>
+                <option value="./../assets/page/brand-logo/andindia.png">andindia</option>
+                <option value="./../assets/page/brand-logo/aristocrat.png">aristocrat</option>
+                <option value="./../assets/page/brand-logo/badtamees.png">badtamees</option>
+                <option value="./../assets/page/brand-logo/bata.png">bata</option>
+                <option value="./../assets/page/brand-logo/biba.png">biba</option>
+                <option value="./../assets/page/brand-logo/bluestone.png">bluestone</option>
+                <option value="./../assets/page/brand-logo/capresebags.png">capresebags</option>
+                <option value="./../assets/page/brand-logo/carlton.png">carlton</option>
+                <option value="./../assets/page/brand-logo/charleskeith.png">charleskeith</option>
+                <option value="./../assets/page/brand-logo/chumbak.png">chumbak</option>
+                <option value="./../assets/page/brand-logo/clovia.png">clovia</option>
+                <option value="./../assets/page/brand-logo/coolwinks.png">coolwinks</option>
+                <option value="./../assets/page/brand-logo/crocs.png">crocs</option>
+                <option value="./../assets/page/brand-logo/dailyobjects.png">dailyobjects</option>
+                <option value="./../assets/page/brand-logo/decathlon.png">decathlon</option>
+                <option value="./../assets/page/brand-logo/dresslily.png">dresslily</option>
+                <option value="./../assets/page/brand-logo/exclusivelane.png">exclusivelane</option>
+                <option value="./../assets/page/brand-logo/EZMall.png">EZMall</option>
+                <option value="./../assets/page/brand-logo/Fabindia.png">Fabindia</option>
+                <option value="./../assets/page/brand-logo/flipkart.png">flipkart</option>
+                <option value="./../assets/page/brand-logo/giftalove.png">giftalove</option>
+                <option value="./../assets/page/brand-logo/Giftsmate.png">Giftsmate</option>
+                <option value="./../assets/page/brand-logo/gocolors.png">gocolors</option>
+                <option value="./../assets/page/brand-logo/haanum.png">haanum</option>
+                <option value="./../assets/page/brand-logo/Hijabenka.png">Hijabenka</option>
+                <option value="./../assets/page/brand-logo/Homeshop18.png">Homeshop18</option>
+                <option value="./../assets/page/brand-logo/iBhejo.png">iBhejo</option>
+                <option value="./../assets/page/brand-logo/igp.png">igp</option>
+                <option value="./../assets/page/brand-logo/India CircuIndias.png"></option>
+                <option value="./../assets/page/brand-logo/iomoto.png">iomoto</option>
+                <option value="./../assets/page/brand-logo/jabong.png">jabong</option>
+                <option value="./../assets/page/brand-logo/jockey.png">jockey</option>
+                <option value="./../assets/page/brand-logo/john jacobjohns.png"></option>
+                <option value="./../assets/page/brand-logo/kalki.png">kalki</option>
+                <option value="./../assets/page/brand-logo/koovs.png">koovs</option>
+                <option value="./../assets/page/brand-logo/lenskart.png">lenskart</option>
+                <option value="./../assets/page/brand-logo/liberty.png">liberty</option>
+                <option value="./../assets/page/brand-logo/lifestyle.png">lifestyle</option>
+                <option value="./../assets/page/brand-logo/limeroad.png">limeroad</option>
+                <option value="./../assets/page/brand-logo/lovzme.png">lovzme</option>
+                <option value="./../assets/page/brand-logo/markryden.png">markryden</option>
+                <option value="./../assets/page/brand-logo/maurices.png">maurices</option>
+                <option value="./../assets/page/brand-logo/maxfashion.png">maxfashion</option>
+                <option value="./../assets/page/brand-logo/mdreams.png">mdreams</option>
+                <option value="./../assets/page/brand-logo/melorra.png">melorra</option>
+                <option value="./../assets/page/brand-logo/mydreamstore.png">mydreamstore</option>
+                <option value="./../assets/page/brand-logo/myntra.png">myntra</option>
+                <option value="./../assets/page/brand-logo/nnnow.png">nnnow</option>
+                <option value="./../assets/page/brand-logo/planetsuperheroes.png">planetsuperheroes</option>
+                <option value="./../assets/page/brand-logo/prettysecrets.png">prettysecrets</option>
+                <option value="./../assets/page/brand-logo/reddressboutique.png">reddressboutique</option>
+                <option value="./../assets/page/brand-logo/reebok.png">reebok</option>
+                <option value="./../assets/page/brand-logo/shein.png">shein</option>
+                <option value="./../assets/page/brand-logo/shopclues.png">shopclues</option>
+                <option value="./../assets/page/brand-logo/shoppersstop.png">shoppersstop</option>
+                <option value="./../assets/page/brand-logo/snapdeal.png">snapdeal</option>
+                <option value="./../assets/page/brand-logo/StyleFiesta.png">StyleFiesta</option>
+                <option value="./../assets/page/brand-logo/tatacliq.png">tatacliq</option>
+                <option value="./../assets/page/brand-logo/thelabellife.png">thelabellife</option>
+                <option value="./../assets/page/brand-logo/themancompany.png">themancompany</option>
+                <option value="./../assets/page/brand-logo/velvetcase.png">velvetcase</option>
+                <option value="./../assets/page/brand-logo/voylla.png">voylla</option>
+                <option value="./../assets/page/brand-logo/wildcaraft.png">wildcaraft</option>
+                <option value="./../assets/page/brand-logo/zivame.png">zivame</option>
+              </datalist>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">mode_edit</i>
+              <input id="input_text_3" type="text" data-length="40" required name="merchentUrl">
+              <label for="input_text_3">Merchent URL</label>
+            </div>
+          </div>
+          <div class="row border-1">
+                <div class="col s3"><h3>Color</h3></div>
+                <div class="col s9">
+                        <label><input type="checkbox" name="colorValue" value="yellow"/> <span>yellow</span></label>
+                        <label><input type="checkbox" name="colorValue" value="white"/> <span>white</span></label>
+                        <label><input type="checkbox" name="colorValue" value="violet"/> <span>violet</span></label>
+                        <label><input type="checkbox" name="colorValue" value="red"/> <span>red</span></label>
+                        <label><input type="checkbox" name="colorValue" value="pink"/> <span>pink</span></label>
+                        <label><input type="checkbox" name="colorValue" value="orange"/> <span>orange</span></label>
+                        <label><input type="checkbox" name="colorValue" value="green"/> <span>green</span></label>
+                        <label><input type="checkbox" name="colorValue" value="black"/> <span>black</span></label>
+                        <label><input type="checkbox" name="colorValue" value="blue"/> <span>blue</span></label>
+                        <label><input type="checkbox" name="colorValue" value="grey"/> <span>grey</span></label>
+                </div>
+            </div><br><br>
+
+        <div class="col s12">
+            <table>
+                <thead>
+                    <tr class="center">
+                        <th><h3 class="center">SIZE</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr><td><label><input type="checkbox" name="itemSize" value="S"><span>S</span></label></td></tr>
+                        <tr><td><label><input type="checkbox" name="itemSize" value="M"><span>M</span></label></td></tr>
+                        <tr><td><label><input type="checkbox" name="itemSize" value="L"><span>L</span></label></td></tr>
+                        <tr><td><label><input type="checkbox" name="itemSize" value="XL"><span>XL</span></label></td></tr>
+                        <tr><td><label><input type="checkbox" name="itemSize" value="XXL"><span>XXL</span></label></td></tr>
+                </tbody>
+            </table>
+            
+        <br>
+        <br>
+        <br>
+        </div>
+        <div class="input-field col s12">
+                <select name="itemCatogery" required>
+                    <option value="T-Shirt">T Shirt</option>
+                    <option value="Sleeveless">Sleeveless</option>
+                    <option value="Shirt">Shirt</option>
+                    <option value="Sweaters">Sweaters & Swetshirt</option>
+                    <option value="Jackets">Jackets</option>
+                    <option value="Coatas">Coatas</option>
+                    <option value="Hoodies">Hoodies</option>
+                    <option value="Kurtas">Kurtas</option>
+                    <option value="Sherwanis">Sherwanis</option>
+                    <option value="fabric">fabric</option>
+                    <option value="Jeans">Jeans</option>
+                    <option value="Pants">Pants</option>
+                    <option value="Trousers">Trousers</option>
+                    <option value="Shorts">Shorts</option>
+                    <option value="Track">Track Paints</option>
+                    <option value="Joggers">Joggers</option>
+                    <option value="Dhoti">Dhoti</option>
+                    <option value="Briefs">Briefs</option>
+                    <option value="Trunks">Trunks</option>
+                    <option value="Vests">Vests</option>
+                    <option value="Boxers">Boxers</option>
+                    <option value="Sleepwear">Sleepwear</option>
+                </select>
+                <label>Select catagory</label>
+        </div>
+            
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">mode_edit</i>
+                <input type="number" name="marketPrice" required id="input_text_4" data-length="4">
+                <label for="input_text_4">Market Price</label>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">mode_edit</i>
+                <input type="number" name="ourPrice" required id="input_text_5" data-length="4">
+                <label for="input_text_5">Our Price</label>
+            </div>
+        </div>
+            <div class="file-field input-field">
+                <div class="btn">
+                  <span>Images</span>
+                  <input type="file" name="image" required multiple>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" placeholder="Choose 4 image Files">
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <input type="number" name="discount" id="input_text_6" required data-length="2">
+                <label for="input_text_6">discount percent</label>
+            </div>
+          <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+              <textarea id="textarea2" class="materialize-textarea" required name="description" data-length="120"></textarea>
+              <label for="textarea2">Description</label>
+            </div>
+        </div>
+        <button type="submit" class="btn blue large">Submit</button>
+    </form>
+</div>
+
+<% include layouts/footer %>

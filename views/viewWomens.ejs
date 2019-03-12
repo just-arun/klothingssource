@@ -1,0 +1,95 @@
+
+<% include layouts/header %>
+<h2>All Womens prodect</h2>
+
+<%- messages('message', locals) %>
+<hr><br>
+<div class="row"><a href="/admin/users/api/womens/addItem" class="col s12 btn">add womens items</a></div>
+<br>
+<div class="row">
+    <form action="/admin/users/api/womens/view/filter" method="POST" class="col l12 m12 s12">
+        <select class="col l9 m8 s8" name="itemCatogery" required>
+            <option value="Kurthas">Kurthas</option>
+            <option value="Suits">Suits</option>
+            <option value="Tunics">Tunics</option>
+            <option value="Tops">Tops</option>
+            <option value="Ethnic">Ethnic Dress</option>
+            <option value="Lengths">Lengths</option>
+            <option value="Salwars">Salwars</option>
+            <option value="Churidars">Churidars</option>
+            <option value="Skirts">Skirts</option>
+            <option value="Palazzos">Palazzos</option>
+            <option value="Top">Top</option>
+            <option value="Tshirt">Tshirt</option>
+            <option value="Jumpsuite">Jumpsuite</option>
+            <option value="Jeans">Jeans</option>
+            <option value="Jeggings">Jeggings</option>
+            <option value="Trosers">Trosers</option>
+            <option value="Capris">Capris</option>
+            <option value="Shorts">Shorts</option>
+            <option value="Sweaters">Sweaters & Sweetshirts</option>
+            <option value="Jackets">Jackets</option>
+            <option value="Bras">Bras</option>
+            <option value="Lingeris">Lingeris Set</option>
+            <option value="Sriefs">Sriefs</option>
+            <option value="Shape">Shape Wear</option>
+            <option value="Lounge">Lounge Wear</option>
+            <option value="Camisoles">Camisoles</option>
+            <option value="Thermals">Thermals</option>
+            <option value="Nisht">Nisht Wear</option>
+            <option value="Bridal">Bridal</option>
+            <option value="Jackets">Jackets</option>
+            <option value="Coats">Coats</option>
+            <option value="Cardian">Cardian</option>
+            <option value="Lingeris">Lingeris Sets</option>
+            <option value="Breafs">Breafs</option>
+            <option value="Shape">Shape Wears</option>
+            <option value="cami-soles">cami soles</option>
+        </select>
+        <a href="/admin/users/api/womens/view" class="btn left">All</a>
+        <button class="col l4 m4 s4 btn red right">Filter</button>
+    </form>
+</div>
+<div class="flex-wrap">
+    <% data.forEach(da=>{%>
+        <div class="small-cart">
+                <div>
+                    <a class="btn-small blue" href="/admin/users/api/womens/edit/<%=da._id%>">EDIT</a>
+                    <button data-id="<%=da._id%>" class="btn-small red right delete-item-womens">DELETE</button>
+                    <sub>by:<%=da.author%></sub>
+                </div>
+                <div><h6>Name:<%=da.name%></h6></div>
+                <div>id:<%=da._id%></div>
+                <div colspan="2">
+                    <% da.colorValue.forEach(shit=>{%>
+                        <%=shit%>  |
+                    <%}) %>
+                </div>
+                <div colspan="2">
+                    <% da.itemSize.forEach(shit=>{%>
+                        <%= shit %>  |
+                    <%}) %>
+                </div>
+                <div colspan="2">
+                    <% da.img.forEach(damn=>{%>
+                        <img src="<%=damn%>" alt="">
+                    <%}) %>
+                </div>
+                <div>
+                    img name:
+                    <ul>
+                    <% da.img.forEach(damn=>{%>
+                        <li><%=damn%></li>
+                    <%}) %></ul>
+                </div>
+                <div>merchentName:<%=da.merchentName%></div>
+                <div>merchentUrl:<%=da.merchentUrl%></div>
+                <div>item catogeary: <%=da.itemCatogery%></div>
+                <div>merketPrice: <%=da.marketPrice%></div>
+                <div>ourPrice:<%=da.ourPrice%></div>
+                <div>discount:<%=da.discount%></div>
+        </div>
+    <%}) %>
+</div>
+
+<% include layouts/footer %>

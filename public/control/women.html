@@ -1,0 +1,17 @@
+
+<div class="card-content-wrapper2" ng-repeat=" ant in womens | filter: searcBoxOne | priceFilter: priceF | orderBy:sortBy">
+    <a ng-href="#!Detail/{{ant._id}}"> 
+        <div ng-click="scrollToTop()" class="cart-images" ng-class="{'cart-images1':colomviewTriger}">
+        <img class="im-1" ng-src="{{ant.img[0]}}" alt="">
+        <img class="im-2" ng-src="{{ant.img[1]}}" alt="">
+        </div>
+    </a>
+    <div class="carte-description">
+        <b class="descount-tag">{{ant.discount}}% OFF</b>
+        <br>
+        <h6 class="center pricing-part"> Rs.{{ant.ourPrice}} <span class="line-through">Rs. {{ant.marketPrice}} </span> </h6>
+        
+        <p class="center def-font-cap"> {{ant.name}} </p>
+        <a class="buy-btn" ng-href="{{ant.merchentUrl}}" target="_blank">Buy Now</a>
+    </div>
+</div>

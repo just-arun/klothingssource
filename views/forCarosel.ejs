@@ -1,0 +1,24 @@
+<% include layouts/header %>
+
+<h1>add accessories</h1>
+<%- messages('message', locals) %>
+<h3 class="center">Add Prodects</h3>
+<br><br>
+<div class="row"><a href="/admin/users/api/carousel/view" class="col s12 btn">view accessories items</a></div>
+<br>
+<div class="row">
+    <form class="col s12" enctype="multipart/form-data" action="/admin/users/api/carousel/addItem" method="post">
+
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Images</span>
+                <input type="file" name="image" required multiple>
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" placeholder="Choose 4 image Files">
+            </div>
+        </div>
+        <button type="submit" class="btn blue large">Submit</button>
+    </form>
+</div>
+<% include layouts/footer %>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentation</title>
+	<style>
+	header{
+		height: 100px;
+		text-align: center;
+	}
+	header h1{
+		position: relative;
+		top: 20px;
+		text-decoration: underline;
+	}
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\000032}}
+	html {
+	  transition: 0.5s;
+	  scroll-behavior: smooth; }
+
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\000035}}
+	.section {
+	  min-height: 100vh;
+	  padding: 20px;
+	  background: #141414; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\000039}}
+	  .section h1 {
+	    font-style: italic;
+	    text-decoration: underline;
+	    color: #c8c832; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000313}}
+	  .section li {
+	    padding: 10px;
+	    list-style: none;
+	    color: #c8aaaa; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000318}}
+	    .section li ul li {
+	      color: yellow; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000321}}
+	      .section li ul li ul li {
+	        color: #6464fa; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000324}}
+	        .section li ul li ul li ul li {
+	          color: green; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000326}}
+	    .section li a {
+	      color: white;
+	      text-decoration: none;
+	      font-family: sans-serif;
+	      text-transform: capitalize; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000331}}
+	  .section p {
+	    color: white; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000333}}
+	  .section h4, .section h3, .section h5 {
+	    font-family: cursive;
+	    text-transform: uppercase;
+	    color: grey;
+	    font-style: oblique;
+	    text-decoration: underline; }
+
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000339}}
+	footer {
+	  height: 200px;
+	  width: 100%;
+	  text-align: center;
+	  color: white;
+	  background-color: #000; }
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000345}}
+	  footer p {
+	    position: relative;
+	    top: 85px;
+	    text-transform: capitalize; }
+
+	@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/linux\/Documents\/projects\/real\/documentation\/styles\/main\.sass}line{font-family:\0000349}}
+	.totop {
+	  position: fixed;
+	  bottom: 5px;
+	  padding: 10px 20px;
+	  right: 5px;
+	  color: white;
+	  background-color: black;
+	  display: block;
+		text-transform: uppercase; }
+
+	/*# sourceMappingURL=main.css.map */
+
+	</style>
+</head>
+<body>
+	<header id="top">
+		<h1>Documentation</h1>
+	</header>
+	<article>
+		<div class="section index">
+			<h3>index</h3>
+			<ul>
+				<li>--<a href="#config">config(for developer)</a></li>
+				<li>--<a href="#models">models(for developer)</a></li>
+				<li>--<a href="#node_modules">node_modules(for developer)</a></li>
+				<li>--<a href="#public">public(for client)</a></li>
+				<li>--<a href="#routes">routes(for developer)</a></li>
+				<li>--<a href="#util">util(for developer)</a></li>
+				<li>--<a href="#views">views(for developer)</a></li>
+			</ul>
+		</div>
+		<div class="section config" id="config">
+			<h1>config folder</h1>
+			<p>
+				this is an folder where all the sensitive informations are stored in this folder <br>
+				information which are stored in this file are as follows
+				<br>
+				<ul>
+					<li>user authendication file</li>
+					<li>database connection</li>
+					<li>database configuration</li>
+					<li>mail configuration</li>
+					<li>login configuration file</li>
+				</ul>
+			</p>
+		</div>
+		<div class="section models" id="models">
+			<h1>models</h1>
+			<p>this is the folder where all files which are stored in the database will be structured in a way <br>
+			as whe are using an nosql database like mongodb we should make an structure to the file so we make it's structure defining its data type wether it's absolutely required or not and lot regester in the database <br>
+			it containes the following items
+			<ul>
+				<li>structures for accessories</li>
+				<li>structure for coupens</li>
+				<li>structure for deals colection</li>
+				<li>structure for mens collections</li>
+				<li>structure for submail collections</li>
+				<li>structure for user collections</li>
+				<li>structure for womens collections</li>
+			</ul>
+			 </p>
+		</div>
+		<div class="section node_modules" id="node_modules">
+			<h1>node_modules</h1>
+			<h3>CAUTION</h3>
+			<p>please don not touch or modify this file or folder in this folder as it countains all the neccessory depondancy for the application to run properly</p>
+		</div>
+		<div class="section public" id="public">
+			<h1>public</h1>
+			<p>this is the only folder where user can enter and modefy the files but should not modefy the folders</p>
+			<h4>folders where users can enter </h4>
+			<ul><li>assets</li></ul>
+			<h4>folders where user should not enter</h4>
+			<ul>
+				<li>control</li>
+				<li>css</li>
+				<li>js</li>
+				<li>server</li>
+			</ul>
+			<h4>folder structure of assets</h4>
+			<ul>
+				<li>assets
+					<ul>
+						<li>page
+							<ul>
+								<li>brand-logo</li>
+								<li>carosel
+									<ul>
+										<li>desk</li>
+										<li>mobi</li>
+									</ul>
+								</li>
+								<li>category
+								</li>
+								<li>flip-logo</li>
+								<li>media-icon</li>
+								<li>mini-banner</li>
+							</ul>
+						</li>
+						<li>uploads</li>
+					</ul>
+				</li>
+			</ul>
+			<h4>uploads folder</h4>
+			<p>this is the folder where all the uploaded image files are stored <br>
+			user can delete files if they wanted by refering to their dashboard image name
+			</p>
+			<h4>page folder</h4>
+			<p>this is the folder where all the frequently altered datas are stored such as <b>carosel</b>,<b>catogery images</b>,<b>brand logos</b>,<b>mini-banner images</b> are stored</p>
+			<h4>brand-logo</h4>
+			<p>this folder holds all the brand's loge theat mentioned in the requirement
+				<br>total number of logos = 69
+			</p>
+			<h4>carosel</h4>
+			<p>this folder has two sub folder DESK and MOBI
+			</p>
+			<h5>desk</h5>
+			<p>this folder featurs all the images in the carosel in the desktop mode <br>
+			these images are in an wider aspect ration screen
+			<br>
+			thes images should ahve the naming convention like img <br>
+			and should have an .jpg extension and only 5 images in it but the user can replace the image but use the same naming convention
+			<br><b>naming convention</b><br>
+			img1.jpg <br>
+			img2.jpg <br>
+			img3.jpg <br>
+			img4.jpg <br>
+			img5.jpg <br>
+			 </p>
+			 <h5>mobi</h5>
+			 <p>
+			 	this folder contain all the carosel image that displays in the desktop formate
+				they are optemised for the mobile formate
+				<br>
+				thes images should hve the naming convention like img <br>
+				and should have an .jpg extension and only 5 images in it but the user can replace the image but use the same naming convention
+				<br><b>naming convention</b><br>
+				img1.jpg <br>
+				img2.jpg <br>
+				img3.jpg <br>
+				img4.jpg <br>
+				img5.jpg <br>
+			 </p>
+			 <h4>catogery</h4>
+			 <p>
+				 thes section have all the images in the small sub catogery section <br>
+				 it have the following folders <br>
+				 bottom <br>
+				 girls <br>
+				 kurtha <br>
+				 shirts <br>
+				 tees <br>
+				 tops <br>
+				 all these folder have one or two image and all have the naming convention of img.jpg
+					their is no numerical charactor(number) follows the naming convention
+			 </p>
+			 <h4>media icon</h4>
+			 <p>this section have all icons for social medias so user should alter it only if it's absoly neccessory</p>
+			 <h4>mini-banner</h4>
+			 <p>this section contains images which is right below the main carosel
+				 they tipicaly contain three images denoting the three major catogery which are mens, womens, accessories <br>
+				 the naming convention should be like <br>
+				 mens.jpg
+				 <br>
+				 womens.jpg <br>
+				 accessories.jpg <br>
+				 and all should have the .jpg formate files <br>
+				 others images ing the page folders are used for placeholder images
+			 </p>
+
+			 <br><hr>
+			 <h4>control</h4>
+			 <p>this secrion has all the html pages used for this application</p>
+			 <h4>css</h4>
+			 <p>this folder have all the css and scss files which are used in the applocation</p>
+			 <h4>js</h4>
+			 <p>this folder have all the javascript and it's dependency library for the app</p>
+		 </div>
+			<div class="section routes" id="routes">
+				<h1>routes</h1>
+				<p>
+					this folder have all the server side routing folder for 	CRUD opration
+					these routs are completely isolated from the frontend and sendData.js is the only file that sends data to the front end
+					when request is received through the http request rest serves  pages to the admin user dashboard
+				</p>
+			</div>
+			<div class="section util" id="util">
+				<h1>util</h1>
+				<p>
+					this folder have the javascripr for mailing and uploading image files to the website
+				</p>
+			</div>
+			<div class="section views" id="views">
+				<h1>views</h1>
+				<p>this section have ejs(embeded javascripr) files for serving to the admin users</p>
+			</div>
+
+	</article>
+	<footer>
+		<p>For more info contact 8248602899 or mail: arunberry47@gamil.com</p>
+	</footer>
+	<a class="totop" href="#top"><div class="totop">
+		index
+	</div></a
+</body>
+</html>

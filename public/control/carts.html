@@ -1,0 +1,25 @@
+
+<i ng-click="showCartTriger()" class="material-icons left" style="position:absolute;top: 16px; left: 10px;padding: 10px;">arrow_back</i>
+<h5 class="mr-P center" style="padding: 10px;">
+    <!-- <a href="" ng-click="showCartTriger()"><i class="material-icons left side-cart-close">close</i></a> -->
+    <b class="black-text">Favourites</b></h5>
+    <hr>
+<div class="container" style="position: relative; top: -30px;">
+    <div class="side-cart-wrapper">
+        <div ng-repeat="card in cartItemList">
+            <p><a><i class="material-icons" style="position:absolute;top:20px;right:10px;color:rgb(66, 66, 66); z-index: 10;" ng-click="removeFromCarts(card._id)">close</i></a> </p>
+            <div class="img-plus-details">
+                <img ng-src="{{card.img[0]}}" alt="">
+                <div class="details">
+                    <b>size: </b> <em ng-repeat="siz in card.itemSize">{{siz}} </em> <br>
+                    <b>Color: </b> <em ng-repeat="col in card.colorValue">{{col}},</em>
+                    <h6>Cost: Rs.{{card.ourPrice}}</h6>
+                    <a class="buy-btn" style="position: relative;top: 10px;" ng-href="{{card.merchentUrl}}" target="_blank">Buy this</a>
+                </div>
+            </div>
+        </div>
+        <div class="center" ng-if=" cartItemList.length < 1 " style="padding:20px 0px;"> you have on item selected </div>
+        <div ng-if=" cartItemList.length > 0 "><br> <hr></div>
+        <h6 class="left" style="position: relative;top: 10px;" ><b class="def-font-cap"> Total: </b><b class="def-font" style="font-weight: 300;">Rs. {{totalCost}}</b> </h6>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+    "offers": [{
+        "id": 24,
+        "campaign": "Jabong",
+        "title": "Extra Rs.1000 off on minimum purchase of Rs.2499/-",
+        "description": "Get extra Rs.1000 off on minimum purchase of Rs.2499/-",
+        "terms_and_condition": "Applicable only on&nbsp;new user app",
+        "coupon_code": "AUTUMN1000",
+        "type": "discount",
+        "shipping_charge": "",
+        "status": "live",
+        "url": "http://www.jabong.com/",
+        "affiliate_url": "https://linksredirect.com/?pub_id=12996CL11769&url=http://www.jabong.com/",
+        "start_date": "2016-09-20",
+        "end_date": "2016-09-30",
+        "categories": {
+            "1": "Fashion"
+        }
+    }]
+}

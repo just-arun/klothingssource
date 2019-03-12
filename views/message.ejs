@@ -1,0 +1,21 @@
+<div id="messages">
+<% Object.keys(messages).forEach(function (type) { %>
+  <div class="<%= type %>">
+  <% messages[type].forEach(function (message) { %>
+    <p><%= message %></p>
+  <% }) %>
+  </div>
+<% }) %>
+</div>
+
+
+<div>
+  <% if(typeof errors != 'undefined' ){%>
+    <% errors.forEach(shit=>{%>
+    <div class="alert">
+      <p><%= shit %></p>
+    </div>
+    <%}) %>
+  <% } %>
+</div>
+  

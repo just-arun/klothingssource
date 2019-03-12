@@ -1,0 +1,95 @@
+
+<% include layouts/header %>
+<h2>All Accessories</h2>
+
+<%- messages('message', locals) %>
+<hr><br>
+<div class="row"><a href="/admin/users/api/accessories/addItem" class="col s12 btn">add accessories items</a></div>
+<br>
+<div class="row">
+    <div class="col l12 m12 s12">
+        <form action="/admin/users/api/accessories/view/filter" method="POST" class="row">
+            <select name="itemCatogery" required>
+                <option value="Handbags">Handbags</option>
+                <option value="Wallets">Wallets</option>
+                <option value="Sunglass">Sunglass</option>
+                <option value="Trolleys">Trolleys</option>
+                <option value="Belts">Belts Scarves</option>
+                <option value="Gift">Gift Shoes</option>
+                <option value="Stoles">Stoles</option>
+                <option value="Necklaces">Necklaces</option>
+                <option value="Earrings">Earrings</option>
+                <option value="Bracelets">Bracelets</option>
+                <option value="Rings">Rings</option>
+                <option value="Keychain">Keychain</option>
+                <option value="Bangles">Bangles</option>
+                <option value="Cliper">Cliper</option>
+
+                <option value="Shoes">Shoes</option>
+                <option value="Sandals">Sandals</option>
+                <option value="Socks">Socks</option>
+                <option value="Wallets">Wallets</option>
+                <option value="Belts">Belts</option>
+                <option value="Wallets">Wallets</option>
+                <option value="Belts">Belts</option>
+                <option value="Ties">Ties</option>
+                <option value="Cufflinks">Cufflinks</option>
+                <option value="Pocket-Squares">Pocket-Squares</option>
+                <option value="Gift-for-Men">Gift-for-Men</option>
+                <option value="Caos-Hats">Caos-Hats</option>
+                <option value="Mufflers">Mufflers</option>
+                <option value="Scarves">Scarves</option>
+                <option value="Gloves">Gloves</option>
+                <option value="Ring">Ring</option>
+                <option value="Sunglass">Sunglass</option>
+                <option value="Keychain">Keychain</option>
+                <option value="Black-pack">Black-pack</option>
+            </select>
+            <a href="/admin/users/api/accessories/view" class="btn left">All</a>
+            <button class="red btn right col l4 m4 s4">Filter</button>
+        </form>
+    </div>
+</div>
+<div class="flex-wrap">
+    <% data.forEach(da=>{%>
+        <div class="small-cart">
+                <div>
+                    <a class="btn-small blue" href="/admin/users/api/accessories/edit/<%=da._id%>">EDIT</a>
+                    <button data-id="<%=da._id%>" class="btn-small red right delete-item-accessories">DELETE</button>
+                    <sub>by:<%=da.author%></sub>
+                </div>
+                <div><h6>Name:<%=da.name%></h6></div>
+                <div>id:<%=da._id%></div>
+                <div colspan="2">
+                    <% da.colorValue.forEach(shit=>{%>
+                        <%=shit%>  |
+                    <%}) %>
+                </div>
+                <div colspan="2">
+                    <% da.itemSize.forEach(shit=>{%>
+                        <%= shit %>  |
+                    <%}) %>
+                </div>
+                <div colspan="2">
+                    <% da.img.forEach(damn=>{%>
+                        <img src="<%=damn%>" alt="">
+                    <%}) %>
+                </div>
+                <div>
+                    img name:
+                    <ul>
+                    <% da.img.forEach(damn=>{%>
+                        <li><%=damn%></li>
+                    <%}) %></ul>
+                </div>
+                <div>merchentName:<%=da.merchentName%></div>
+                <div>merchentUrl:<%=da.merchentUrl%></div>
+                <div>item catogeary: <%=da.itemCatogery%></div>
+                <div>merketPrice: <%=da.marketPrice%></div>
+                <div>ourPrice:<%=da.ourPrice%></div>
+                <div>discount:<%=da.discount%></div>
+        </div>
+    <%}) %>
+</div>
+
+<% include layouts/footer %>

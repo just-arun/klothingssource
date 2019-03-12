@@ -1,0 +1,35 @@
+{
+  "name": "test-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "author": "arun",
+  "license": "ISC",
+  "homepage": "https://just-arun.github.io/klothings",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "angular-animate": "^1.7.6",
+    "angular-ez-plus": "^1.2.1",
+    "angularjs-slider": "^6.6.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "install": "^0.12.2",
+    "mongoose": "^5.4.5",
+    "multer": "^1.4.1",
+    "nodemailer": "^5.1.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.0",
+    "wip-image-zoom": "^1.4.1"
+  }
+}

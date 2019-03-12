@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/server/css/main.css">
+</head>
+<body>
+    <nav class="blue white" id="totop">
+      <div class="nav-wrapper black-text ">
+        <a href="#" class="left brand-logo black-text">KLOTHINGS</a>
+        <ul class="right black-text">
+          <li><a class=" black-text" href="/admin/users/api/mens/view">mens</a></li>
+          <li><a class=" black-text" href="/admin/users/api/womens/view">womens</a></li>
+          <li><a class=" black-text" href="/admin/users/api/accessories/view">accessories</a></li>
+          <li class="red"><a href="">Log out</a></li>
+        </ul>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <%-body%>
+    </div>
+    <a href="#totop" class="grey white-text toTop">To Top</a>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/server/js/main.js"></script>
+</body>
+</html>

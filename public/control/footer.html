@@ -1,0 +1,57 @@
+<footer ng-class="{ 'container':isMobile }" ng-controller="footer-ctrl">
+
+    <div class="foot-divs about">
+        <ul>
+            <h6>About</h6>
+            <li><a href="">about us</a></li>
+            <li><a href="">terms &amp; conditions</a></li>
+            <li><a href="">privacy policy</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+    </div>
+    <div class="foot-divs">
+        <ul>
+            <h6>Need Help</h6>
+            <li><a href="">help</a></li>
+            <li><a href="">contact us</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Service</a></li>
+        </ul>
+    </div>
+    <div class="foot-divs shop-by">
+        <ul>
+            <h6>Shop By</h6>
+            <li><a href="">men</a></li>
+            <li><a href="">women</a></li>
+            <li><a href="">accessories</a></li>
+            <li><a href="">offers</a></li>
+            <li><a href="">coupens</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+    </div>
+    <div class="foot-divs follow-us">
+        <ul>
+            <h6>Follow us</h6>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Pintrest</a></li>
+            <li><a href="#">Google +</a></li>
+        </ul>
+    </div>
+    <div class="contact-div"class="sebscribe" ng-controller="sebscribe">
+            <h6 class="center tops">Stay Updated</h6>
+            <p class="center tops">Receive our latest update about our Coupens and Offers</p>
+            <div class="res-to-sub">Thanks For Joining</div>
+        <form class="w-200" >
+            <div class="input-field inline ">
+                <input id="email_inline1" type="email" ng-model="eMailId" class="validate font-10">
+                <label for="email_inline1">Your email</label>
+                <span class="helper-text" data-error="wrong" data-success="right"></span>
+            </div>
+            <button class="custome-submit-btn def-color white-text" ng-click="sendMail(eMailId)" type="submit"> <i class="material-icons">send</i>
+            </button>
+        </form>
+    </div>
+</footer>
+<p class="ft-coppy-rightes center footer-copyright" style="background: #f8f8f8; font-size: 13px; text-transform: uppercase; margin: 0px;"> Copyright &copy; 2019 all right reserved </p>

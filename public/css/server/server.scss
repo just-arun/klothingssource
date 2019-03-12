@@ -1,0 +1,38 @@
+$font: 'PT Sans', sans-serif;
+$fontCap: 'PT Sans Caption', sans-serif;
+$logocolor: #6600cc;
+$ourRed: #d5331e;
+$ourYellow: #ffcc00;
+$logocolor: #6600cc;
+@mixin tab {
+    @media (max-width:600px) {
+        @content;
+    }
+}
+@mixin desk {
+    @media (min-width:600px) {
+        @content;
+    }
+}
+.def-color{background: #6600cc;box-shadow: none}
+.def-color:hover{background: #5700ad;}
+.center-btn{left: 50%;top: 50%; transform: translate(-50%,-50%); position: absolute;};
+.h-200{height: 200px;}
+.custome-cart{
+    .custome-cart-image{
+        display: flex;
+        flex-wrap: wrap;
+        width: 160px;
+        height: 160px;
+        img{
+            height: 80px;
+            width: 80px;
+        }
+    }
+}
+
+.def-color,.def-color:hover{background: $logocolor;}
+.squar-box{
+    height: 350px;
+    width: 350px;
+}

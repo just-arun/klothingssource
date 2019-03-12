@@ -1,0 +1,116 @@
+<div class="row mens-wrapper" ng-controller="Dressfilter">
+        <div class="sticky-top-50 col l3 hide-on-med-and-down">
+            <aside>
+                <ul>
+                    <h5 class="def-font-cap">Filter</h5>
+                    <li class="aside-items">
+                        <div class="collapsible-header preview pos-relative" ng-click="togglePrice = !togglePrice">
+                            <i class="material-icons">&#x20B9;</i> Cost 
+                            <i class="material-icons custome-right-align show" ng-class="{ 'hide':togglePrice }">add</i>
+                            <i class="material-icons custome-right-align show">remove</i>
+                        </div>
+                        <div class="main-con h-0" ng-class="{ 'h-100' : togglePrice }">
+                            <form action="#">
+                                <p class="range-field">
+                                  <input type="range" min="120" max="10000" id="test5" ng-model="priceF" min="0" max="100" />
+                                  <!-- <rzslider
+                                    rz-slider-model="slider.min"
+                                    rz-slider-high="slider.max"
+                                    rz-slider-options="slider.options"></rzslider> -->
+                                </p>
+                                <p class="center-align">₹:{{priceF}}</p>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="aside-items">
+                        <div class="collapsible-header preview pos-relative" ng-click="toggleColor = !toggleColor">
+                            <i class="material-icons">color_lens</i> Color 
+                            <i class="material-icons custome-right-align show" ng-class="{ 'hide': toggleColor }">add</i>
+                            <i class="material-icons custome-right-align show">remove</i>
+                        </div>
+                        <div class="main-con jus-con-cent container h-0 " ng-class="{ 'h-120' : toggleColor}">
+                            <ul class=" dis-fle-wra" style="justify-content: left; padding-top: 15px;">
+                                <li> 
+                                    <span><div class="color-box waves-effect red" ng-click="colorPicker_red()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect yellow" ng-click="colorPicker_yellow()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect blue" ng-click="colorPicker_blue()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect green" ng-click="colorPicker_green()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect grey" ng-click="colorPicker_grey()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect pink" ng-click="colorPicker_pink()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect violet" ng-click="colorPicker_violet()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect black" ng-click="colorPicker_black()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect white" ng-click="colorPicker_white()" ></div></span>
+                                </li>
+                                <li>
+                                    <span><div class="color-box waves-effect orange" ng-click="colorPicker_orange()" ></div></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="aside-items">
+                        <div class="collapsible-header preview pos-relative" ng-click="toggleSize = !toggleSize"><i class="material-icons">show_chart</i> Size
+                            <i class="material-icons custome-right-align show" ng-class="{ 'hide': toggleSize }">add</i>
+                            <i class="material-icons custome-right-align show">remove</i>
+                        </div>
+                        <div class="main-con jus-con-cent container h-0" ng-class="{ 'h-100' : toggleSize}">
+                            <ul class="dis-fle-wra row">
+                                <li ng-click="sizeS()" class="pad-r-10 border-pad-1-10 waves-light" style="position: relative;left: 10px;top: 10px;">
+                                    <div class="focus-thing">S</div>
+                                </li>
+                                <li ng-click="sizeM()" class="pad-r-10 border-pad-1-10 waves-light" style="position: relative;left: 10px;top: 10px;">
+                                    <div class="focus-thing">M</div>
+                                </li>
+                                <li ng-click="sizeL()" class="pad-r-10 border-pad-1-10 waves-light" style="position: relative;left: 10px;top: 10px;">
+                                    <div class="focus-thing">L</div>
+                                </li>
+                                <li ng-click="sizeXL()" class="pad-r-10 border-pad-1-10 waves-light" style="position: relative;left: 10px;top: 10px;">
+                                    <div class="focus-thing">XL</div>
+                                </li>
+                                <li ng-click="sizeXXL()" class="pad-r-10 border-pad-1-10 waves-light" style="position: relative;left: 10px;top: 10px;">
+                                    <div class="focus-thing">XXL</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </aside> 
+        </div>
+        <!-- <div class="hide-on-large-only">
+        <br>
+        <br>
+        <br>
+        <br>
+        </div> -->
+        <div class="section">
+                <div class="bredCrub-withut-shadow">
+                    <a href="#!"  ng-click="fefresh()">Home</a>
+                    <i class="material-icons">chevron_right</i>
+                    <a href="{{thisPage[0]}}">{{thisPage[1]}}</a>
+                    <i class="material-icons">chevron_right</i>
+                    <a href="">{{catogery}}</a>
+                </div>
+        </div>
+        <!-- <br>
+        <br>
+        <br> -->
+        <div class=" col l9 s12" ng-controller="allDress">
+            <div class="card-content-wrapper" ng-include="'/control/men.html'"></div>
+    </div>
+</div>
+    
