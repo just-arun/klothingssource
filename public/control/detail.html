@@ -4,11 +4,11 @@
         <div class="all-img-sec">
             <div class="min-img-sec">
                 <div class="mini-img" ng-repeat="ints in details.img"> 
-                    <img ng-click="selectedImg(ints)" ng-src="{{ints}}"  alt=""> 
+                    <img ng-mouseover="selectedImg(ints)" ng-src="{{ints}}"  alt=""> 
                 </div>
             </div>
             <div class="detail-img-main">
-                <img id="zoom_04" src="{{mainImg}}" class="materialboxed" style="width: 100%;" alt="">
+                <img src="{{mainImg}}" class="" style="width: 100%;" alt="">
             </div>
         </div>
         <div class="details-text pos-rela">
@@ -31,7 +31,7 @@
                     </p>
                     <h6 style="position: relative;top: -2px"><b>Description</b>:</h6>
                     <p style="position: relative;top: -9px"> {{details.description}} </p>
-                    <h6 style="position: relative;top: -24px"><b>Merchent: </b> <a href="{{details.merchentUrl}}" target="_blank"><img class="merchent" ng-src="{{details.merchentName}}" alt=""></a> </h6>
+                    <h6 style="position: relative;top: -24px"><b>Merchant: </b> <a href="{{details.merchentUrl}}" target="_blank"><img class="merchent" ng-src="{{details.merchentName}}" alt=""></a> </h6>
                     <div style="position: relative;top: -8px;">
                         <a href="" ng-click="addedItem(details);trigerToster();"><i class="material-icons carts-btn" style="padding: 6px; margin-right: 5px;">favorite</i></a> 
                         <!-- <b class="white-text">__</b> -->

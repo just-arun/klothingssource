@@ -9,21 +9,21 @@
     .loading-text{position: absolute;top: 50%;transform: translateY(-60%);height: 50px;width:50px;border: 5px solid #fff;border-top: 5px solid #6600cc;border-right: 5px solid #6600cc; border-radius: 50%; animation: spin 1s infinite linear;}
     @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
     </style>
-    <script>
+    <script> 
     window.onload = function(){ document.body.removeChild(document.querySelector('.loading-text-container'));}
     </script>
     <meta name="author address" content="arunberry47@gmail.com">
     <meta name="author name" content="arun">
-    <title>Klothes</title>
+    <title>Klothings</title>
     <link rel="fonts" href="./css/pt-sans-caption-v10-latin-regular.ttf">
     <link rel="fonts" href="./css/pt-sans-v9-latin-regular.ttf">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="./assets/page/done.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="./css/wip-image-zoom.min.css"> -->
 </head>
 <body ng-controller="main-ctrl">
     <div class="loading-text-container">
@@ -40,41 +40,37 @@
                     <div class="new-women">
                         <ul>
                             <h5>indian wear</h5>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Kurthas">Kurthas</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Suits">suits</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tunics">tunics</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tops">tops</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Kurthas">Kurtas</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Suits">Suits</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tunics">Tunics</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Womens/Ethnic">ethnic dress</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Lengths">lengths</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Womens/Salwars">salwars</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Churidars">churidars</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Skirts">skirts</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Palazzos">palazzos</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Churidars">chudidars</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Bridal">Sarees</a></li>
                         </ul>
                         <ul>
                             <h5>western wear</h5>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tops">top</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tshirt">tshirt</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jumpsuite">jumpsuite</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jeans">jeans</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jeggings">jeggings</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Trosers">trosers</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Capris">capris</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Shorts">shorts</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Sweaters">sweaters &amp; sweetshirts</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jackets">jackets</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tops">tops</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Tshirt">T-shirts</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jumpsuite">jumpsuites</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Sweaters">sweaters</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Camisoles">Dresses</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Thermals">thermals</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Nisht">night wear</a></li>
                         </ul>
                         <ul>
                             <h5>bottom wear</h5>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Bras">bras</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Lingeris">lingeris set</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Sriefs">sriefs</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Sriefs">briefs</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Womens/Shape">shape wear</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Womens/Lounge">lounge wear</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Camisoles">camisoles</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Thermals">thermals</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Nisht">nisht wear</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Womens/Bridal">bridal</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jeans">jeans</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Jeggings">pants</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Lengths">lengths</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Trosers">trousers</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Capris">capris</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Skirts">skirts</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Shorts">shorts</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Palazzos">palazzos</a></li>
                         </ul>
                         <ul>
                             <h5>winter wear</h5>
@@ -82,10 +78,10 @@
                             <li ng-click="scrollToTop()" ><a href="#!Womens/Coats">coats</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Womens/Cardian">cardian</a></li>
                             <h5>inner wear</h5>
-                            <li ng-click="scrollToTop()"  class="top-minus-20"><a href="#!Womens/Lingeris">lingeris sets</a></li>
-                            <li ng-click="scrollToTop()"  class="top-minus-20"><a href="#!Womens/Breafs">breafs</a></li>
+                            <li ng-click="scrollToTop()"  class="top-minus-20"><a href="#!Womens/Lingeris">lingerie sets</a></li>
+                            <li ng-click="scrollToTop()"  class="top-minus-20"><a href="#!Womens/Breafs">briefs</a></li>
                             <li ng-click="scrollToTop()"  class="top-minus-20"><a href="#!Womens/Shape">shape wears</a></li>
-                            <li ng-click="scrollToTop()"  class="top-minus-20"><a href="#!Womens/cami-soles">cami soles</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Womens/Bras">bras</a></li>
                         </ul>
                     </div>
                 </li>
@@ -93,29 +89,29 @@
                     <div class="new-men">
                         <ul class="new-ul-1">
                             <h5>TOP WEAR</h5>
-                            <li ng-click="scrollToTop()" ><a href="#!Mens/T-Shirt">T shirt</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Mens/T-Shirt">T shirts</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Sleeveless">Sleeveless</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Mens/Shirt">Shirt</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Mens/Sweaters-Swetshirt">Sweaters &amp; Swetshirt</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Mens/Shirt">Shirts</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Mens/Sweaters-Swetshirt">Sweaters</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Jackets">Jackets</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Mens/Coatas">Coatas</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Mens/Coatas">Coats</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Hoodies">Hoodies</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Kurtas">kurtas</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Sherwanis">Sherwanis</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/fabric">Fabric</a></li>
                         </ul>
                         <ul class="new-ul-2">
-                            <h5>BOTTOM WERE</h5>
+                            <h5>BOTTOM WEAR</h5>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Jeans">Jeans</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Pants">Pants</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Trousers">Trousers</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Shorts">Shorts</a></li>
-                            <li ng-click="scrollToTop()" ><a href="#!Mens/Track">Track Paints</a></li>
+                            <li ng-click="scrollToTop()" ><a href="#!Mens/Track">Track Pants</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Joggers">Joggers</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Dhoti">Dhoti</a></li>
                         </ul>
                         <ul class="new-ul-3">
-                            <h5>INNERWARE</h5>
+                            <h5>INNER WEAR</h5>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Briefs">Briefs</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Trunks">Trunks</a></li>
                             <li ng-click="scrollToTop()" ><a href="#!Mens/Vests">Vests</a></li>
@@ -124,7 +120,7 @@
                         </ul>
                     </div>
                 </li>
-                <li ng-click="scrollToTop()" class="newLi fade li-1-3"><a class="font-weight-900 black-text" href="#!Accessories-All"><h6>Acessories</h6></a>
+                <li ng-click="scrollToTop()" class="newLi fade li-1-3"><a class="font-weight-900 black-text" href="#!Accessories-All"><h6>Accessories</h6></a>
                 <div class="acessories-wrapper">
                     <div class="acc-for-mens row">
                     <img class="col l3" src="assets/page/img-lad-1.png"/>
@@ -132,22 +128,22 @@
                         <h5 style="position: relative;left: -8px;">womens</h5>
                         <div>
                             <ul>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Handbags">Handbags</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Wallets">Wallets</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Sunglass">Sunglass</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Trolleys">Trolleys</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Belts">Belts Scarves</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Gift">gift shoes</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Stoles">Stoles</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Handbags">Bags</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Wallets">Wallets</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Sunglass">Sunglass</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Trolleys">Watches</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Belts">Shoes</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Gift">gifts For Women</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Stoles">Stoles</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Necklaces">Necklaces</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Earrings">Earrings</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Bracelets">Bracelets</a></li>
                             </ul>
                             <ul>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Necklaces">Necklaces</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Earrings">Earrings</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Bracelets">Bracelets</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Rings">Rings</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Keychain">Keychain</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Bangles">Bangles</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Womens/Accessories/Cliper">Cliper</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Rings">Rings</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Keychain">Keychain</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Bangles">Bangles</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Womens/Cliper">Slippers</a></li>
                             </ul>
                         </div>
                     </div>
@@ -157,28 +153,21 @@
                         <h5 style="position: relative;left: -23px;">mens</h5>
                         <div>
                             <ul>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Shoes">Shoes</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Sandals">Sandals</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Socks">Socks</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Wallets">Wallets</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Belts">Belts</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Wallets">Wallets</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Belts">Belts</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Ties">Ties</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Cufflinks">Cufflinks</a></li>
-
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Sunglass">Sunglass</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Cufflinks">Watches</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Shoes">Shoes</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Sandals">Sandals</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Wallets">Wallets</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Ring">Jwellerys</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Belts">Belts</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Gift-for-Men">Gifts for Men</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Caos-Hats">Caps</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Scarves">Scarves</a></li>
                             </ul>
                             <ul>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Pocket-Squares">Pocket Squares</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Gift-for-Men">Gift for Men</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Caos-Hats">Caos &amp; Hats</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Mufflers">Mufflers</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Scarves">Scarves</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Gloves">Gloves</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Ring">Ring</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Sunglass">Sunglass</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Keychain">Keychain</a></li>
-                                <li ng-click="scrollToTop()" ><a href="#!Mens/Accessories/Black-pack">Black pack</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Pocket-Squares">Pocket Squares</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Keychain">Keychains</a></li>
+                                <li ng-click="scrollToTop(); sleceficAccessories(); " ><a href="#!Accessories/Mens/Black-pack">Backpacks</a></li>
                             </ul>
                         </div>
                     </div>
@@ -186,15 +175,14 @@
                     </div>
                 </div>
                 </li>
-                <li ng-click="scrollToTop()" class="newLi fade li-1-4" ng-click="fefresh()"><a class="font-weight-900 black-text" href="#!Deals"><h6>Deals</h6></a></li>
-                <li ng-click="scrollToTop()" class="newLi fade li-1-5" ng-click="fefresh()"><a class="font-weight-900 black-text" href="#!Coupens"><h6>Coupons</h6></a></li>
+                <li ng-click="scrollToTop()" class="newLi fade li-1-5" ng-click="fefresh()"><a class="font-weight-900 black-text" href="#!Coupens"><h6>Offers</h6></a></li>
             </ul>
             <ul class="right dis-fle desk-nav-sec" style=" top: 30%; z-index: 11; " >
-                <li class="input-field"> <div class="width-0 padding-0" ng-class="{ 'desk-search-style': searchTriger }"> <input type="search" ng-model="searcBoxOne" id="searchBox" placeholder="Search term..." ></div></li>
+                <!-- <li class="input-field"> <div class="width-0 padding-0" ng-class="{ 'desk-search-style': searchTriger }"> <a href="#product-items"> <input type="search" ng-model="searcBoxOne" id="searchBox" ng-click="scrolltitems" placeholder="Search term..." ></a></div></li>
                 <li><a href="">
                     <i class="material-icons font-30 def-color-text pos-abs opacity-0" ng-class="{ 'opacity-1' : searchTriger }" ng-click="searchTriger = !searchTriger; searcBoxOne = ''">close</i>
                     <label for="searchBox"><i class="material-icons font-30 def-color-text" ng-class="{ 'hide' : searchTriger }" ng-click="searchTriger = !searchTriger">search</i></label>
-                </a></li>
+                </a></li> -->
                 <li><a href="#modal1"  class="modal-trigger"><i class="material-icons font-30 def-color-text">account_circle</i></a></li>
                 <li ng-click="showCartTriger()"><a href=""><i class="material-icons font-30 def-color-text">favorite</i></a><span class="updataCartsItems" style=" top: 10px;">{{cartItemList.length}}</span> </li>
             </ul>
@@ -229,39 +217,42 @@
                   <div class="row">
                      <div class="col s12">
                        <ul class="tabs">
-                         <li class="tab col s3"><a href="#indianWomens">INDIAN</a></li>
-                         <li class="tab col s3"><a class="active" href="#westernWomens">WESTERN</a></li>
+                         <li class="tab col s3"><a href="#indianWomens">TOPS</a></li>
+                         <li class="tab col s3"><a href="#westernWomens">BOTTOMS</a></li>
                        </ul>
                      </div>
                      <div id="indianWomens" class="col s12">
-                         <ul>
-                             <li ng-click="scrollToTop()"><a class=" sidemobile-nav-subscribe-close waves-effect" href="#!Womens/Kurthas">Kurthas</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Suits">suits</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tunics">tunics</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tops">tops</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Ethnic">ethnic dress</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Lengths">lengths</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Salwars">salwars</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Churidars">churidars</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Skirts">skirts</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Palazzos">palazzos</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jackets">Jaackts</a></li>
-                         </ul>
+                        <ul>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tops">Tops</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tshirt">Tshirts</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Camisoles">Dresses</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Churidars">Chudidars</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Cardian">Cardian</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Coats">Coats</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Kurthas">Kurtas</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Suits">Suits</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tunics">Tunics</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Ethnic">Ethnic Dress</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Salwars">Salwars</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jumpsuite">Jumpsuite</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Sweaters">Sweaters</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jackets">Jackets</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Thermals">Thermals</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Nisht">Night Wear</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Bridal">Sarees</a></li>
+                        </ul>
                      </div>
                      <div id="westernWomens" class="col s12">
                          <ul>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tops">Top</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Tshirt">Tshirts</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jumpsuite">Jumpsuite</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jeans">Jeans</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jeggings">Jeggings</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Trosers">Trousers</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Capris">Capris</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Shorts">Shorts</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Sweaters">Sweaters &amp; Sweetshirts</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jackets">Jackets</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Coats">Coats</a></li>
-                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Cardian">Cardian</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Lengths">Lengths</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Skirts">Skirts</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jeggings">Pants</a></li>
+                             <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Palazzos">Palazzos</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Trosers">Trousers</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Capris">Capris</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Jeans">Jeans</a></li>
+                            <li ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Shorts">Shorts</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Lounge">Lounge Wear</a></li>
                          </ul>
                       </div>
                    </div>
@@ -278,14 +269,14 @@
                      </div>
                      <div id="MensTop" class="col s12">
                          <ul>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/T-Shirt">T shirt</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/T-Shirt">T-shirts</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Sleeveless">Sleeveless</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Shirt">Shirt</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Sweaters-Swetshirt">Sweaters &amp; Swetshirt</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Shirt">Shirts</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Sweaters-Swetshirt">Sweaters &amp; Sweatshirts</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Jackets">Jackets</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Coatas">Coatas</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Coatas">Coats</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Hoodies">Hoodies</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Kurtas">kurtas</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Kurtas">Kurtas</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Sherwanis">Sherwanis</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/fabric">Fabric</a></li>
                          </ul>
@@ -296,7 +287,7 @@
                              <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Pants">Pants</a></li>
                              <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Trousers">Trousers</a></li>
                              <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Shorts">Shorts</a></li>
-                             <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Track">Track Paints</a></li>
+                             <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Track">Track Pants</a></li>
                              <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Joggers">Joggers</a></li>
                              <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Mens/Dhoti">Dhoti</a></li>
                          </ul>
@@ -325,14 +316,9 @@
                    <div id="innerWomens" class="col s12">
                        <ul>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Bras">Bras</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Lingeris">Lingeris Set</a></li>
+                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Lingeris">Lingerie Sets</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Sriefs">Briefs</a></li>
                            <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Shape">Shape Wear</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Lounge">Lounge Wear</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Camisoles">Camisoles</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Thermals">Thermals</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Nisht">Nisht Wear</a></li>
-                           <li  ng-click="scrollToTop()"><a class=" sidenav-close waves-effect" href="#!Womens/Bridal">Bridal</a></li>
                        </ul>
                     </div>
                  </div>
@@ -349,60 +335,54 @@
                  </div>
                  <div id="accessoriesMens" class="col s12">
                    <ul>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Shoes" class="sidenav-close waves-effect">Shoes</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Sandals" class="sidenav-close waves-effect">Sandals</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Socks" class="sidenav-close waves-effect">Socks</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Wallets" class="sidenav-close waves-effect">Wallets</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Belts" class="sidenav-close waves-effect">Belts</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Wallets" class="sidenav-close waves-effect">Wallets</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Belts" class="sidenav-close waves-effect">Belts</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Ties" class="sidenav-close waves-effect">Ties</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Cufflinks" class="sidenav-close waves-effect">Cufflinks</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Pocket-Squares" class="sidenav-close waves-effect">Pocket Squares</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Gift-for-Men" class="sidenav-close waves-effect">Gift for Men</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Caos-Hats" class="sidenav-close waves-effect">Caos &amp; Hats</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Mufflers" class="sidenav-close waves-effect">Mufflers</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Scarves" class="sidenav-close waves-effect">Scarves</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Gloves" class="sidenav-close waves-effect">Gloves</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Ring" class="sidenav-close waves-effect">Ring</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Sunglass" class="sidenav-close waves-effect">Sunglass</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Keychain" class="sidenav-close waves-effect">Keychain</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Mens/Accessories/Black-pack" class="sidenav-close waves-effect">Black pack</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Sunglass" class="sidenav-close waves-effect">Sunglass</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Cufflinks" class="sidenav-close waves-effect">Watches</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Shoes" class="sidenav-close waves-effect">Shoes</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Sandals" class="sidenav-close waves-effect">Sandals</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Wallets" class="sidenav-close waves-effect">Wallets</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Ring" class="sidenav-close waves-effect">Jwellerys</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Belts" class="sidenav-close waves-effect">Belts</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Gift-for-Men" class="sidenav-close waves-effect">Gifts For Men</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Caos-Hats" class="sidenav-close waves-effect">Caps</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Pocket-Squares" class="sidenav-close waves-effect">Pocket Squares</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Scarves" class="sidenav-close waves-effect">Scarves</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Keychain" class="sidenav-close waves-effect">Keychains</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Mens/Black-pack" class="sidenav-close waves-effect">Backpacks</a></li>
                    </ul>
                  </div>
                  <div id="accessoriesWomens" class="col s12">
                    <ul>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Handbags" class="sidenav-close waves-effect">Handbags</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Wallets" class="sidenav-close waves-effect">Wallets</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Sunglass" class="sidenav-close waves-effect">Sunglass</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Trolleys" class="sidenav-close waves-effect">Trolleys</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Belts" class="sidenav-close waves-effect">Belts Scarves</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Gift" class="sidenav-close waves-effect">Gift Shoes</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Stoles" class="sidenav-close waves-effect">Stoles</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Necklaces" class="sidenav-close waves-effect">Necklaces</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Earrings" class="sidenav-close waves-effect">Earrings</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Bracelets" class="sidenav-close waves-effect">Bracelets</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Rings" class="sidenav-close waves-effect">Rings</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Keychain" class="sidenav-close waves-effect">Keychain</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Bangles" class="sidenav-close waves-effect">Bangles</a></li>
-                     <li  ng-click="scrollToTop()"><a href="#!Womens/Accessories/Cliper" class="sidenav-close waves-effect">Cliper</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Handbags" class="sidenav-close waves-effect">Bags</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Wallets" class="sidenav-close waves-effect">Wallets</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Sunglass" class="sidenav-close waves-effect">Sunglass</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Trolleys" class="sidenav-close waves-effect">Watches</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Belts" class="sidenav-close waves-effect">Shoes</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Gift" class="sidenav-close waves-effect">Gifts For Women</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Stoles" class="sidenav-close waves-effect">Stoles</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Necklaces" class="sidenav-close waves-effect">Necklaces</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Earrings" class="sidenav-close waves-effect">Earrings</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Bracelets" class="sidenav-close waves-effect">Bracelets</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Rings" class="sidenav-close waves-effect">Rings</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Keychain" class="sidenav-close waves-effect">Keychains</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Bangles" class="sidenav-close waves-effect">Bangles</a></li>
+                     <li  ng-click="scrollToTop()"><a href="#!Accessories/Womens/Cliper" class="sidenav-close waves-effect">Slippers</a></li>
                    </ul>
                   </div>
                </div>
 
             </div>
         </li>
-        <li class="sidenav-close" ng-click="fefresh()"><a href="#!Deals" style="position:relative; left:-16px;">Deals &AMP; Coupons <i class="fa fa-tag" style="font-size:22px;margin-right: 32px;position: relative;right: -3px;"></i></a></li>
+        <li class="sidenav-close"><a href="#!Coupens" style="position:relative; left:-16px;">Offers &AMP; Coupons <i class="fa fa-tag" style="font-size:22px;margin-right: 32px;position: relative;right: -3px;"></i></a></li>
         <li  ng-click="scrollToTop()" class="sidenav-close" ><a ng-click="showCartTriger()" href="" style="position:relative; left:-15px;">Favourite <i class="material-icons custome-black" style="position: relative;right: 1;">favorite</i><span class="right" style="position: relative;left: -10px;color: #6600cc">{{cartItemList.length}}</span></a></li>
         <li class="sidenav-close"><a href="#!" style="position: relative;left: -16px;" > <img style="width:22px;top: 5px;right: -3px; position: relative; margin-right: 30px;" src="./assets/page/question-mark (1).svg" alt=""> About</a></li>
         <hr>
         <li>
             <h6 class=" def-font-cap" style="left: 18px;position: relative;">Follow us</h6>
             <div class="dis-fle" style="position: relative;left:10px;">
-                <a href="" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/facebook.svg" alt=""></i></a>
-                <a href="" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/instagram.svg" alt=""></i></a>
-                <a href="https://www.instagram.com/arunberry47/?hl=en" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/pinterest.svg" alt=""></i></a>
-                <a href="" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/twitter.svg" alt=""></i></a>
+                <a href="https://www.facebook.com/klothingsshop/" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/facebook.svg" alt=""></i></a>
+                <a href="https://instagram.com/klothings_?utm_source=ig_profile_share&igshid=1dt0h6yrtrjqd" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/instagram.svg" alt=""></i></a>
+                <a href="https://in.pinterest.com/klothingsshop/pins/" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/pinterest.svg" alt=""></i></a>
+                <a href="https://twitter.com/klothings1" target="_blank"><i><img class="fa-icon" src="./assets/page/media-icon/twitter.svg" alt=""></i></a>
             </div>
         </li>
     </ul>
@@ -416,7 +396,7 @@
             <a href="#!"><img src="./assets/page/logo png.png" alt=""></a>
             <form>
                 <div class="input-field">
-                <input id="search" placeholder="Search items..." style="width: 200px;" ng-model="searcBoxOne" type="search" required>
+                <input id="search" placeholder="Search items..." style="width: 200px;"  ng-click="window.location.hash='product-items';scrolltitems()" ng-model="searcBoxOne" type="search" required>
                 <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
                 <i class="material-icons" ng-click=" searcBoxOne='' ">close</i>
                 </div>
@@ -445,7 +425,7 @@
             <div class=" right col xl2 l2 m3 s4">
                 <div class="input-field" style="position: relative;">
                     <select ng-model="sortBy" style="border: 1px solid black;">
-                        <optgroup label="Prodects">
+                        <optgroup label="Products">
                             <option selected value="-_id">New</option>
                         </optgroup>
                         <optgroup label="Price">
@@ -465,14 +445,6 @@
     <div ng-include="'/control/SearchPage.html'" class="search-output"></div>
 
     <ng-view></ng-view>
-    <div class="carousel" style="height: 190px; position: relative;top: -10px;">
-        <a class="carousel-item" href=""><img src="/assets/page/img1.jpg"></a>
-        <a class="carousel-item" href=""><img src="/assets/page/img2.jpg"></a>
-        <a class="carousel-item" href=""><img src="/assets/page/img3.jpg"></a>
-        <a class="carousel-item" href=""><img src="/assets/page/img4.jpg"></a>
-        <a class="carousel-item" href=""><img src="/assets/page/img5.jpg"></a>
-    </div>
-
     <!-- for popup model triger -->
 
     <div id="showFilter" class="modal" ng-controller="Dressfilter">
@@ -571,7 +543,7 @@
 
 
   <!-- Modal Structure -->
-  <div id="modal1" class="modal">
+  <div id="modal1" class="modal modalone">
     <a href="#!" class="modal-close waves-effect waves-green btn-flat right"> <i class="material-icons">close</i> </a>
     <div class="modal-content">
       <h4>Subscribe</h4>
@@ -600,23 +572,41 @@
             <a href="" class="modal-close waves-effect waves-green pos-abs top-right-5"><i class="material-icons black-text">close</i> </a>
         <div class="modal-content pos-relative">
             <img style="transform: rotate(90deg)" class="center" ng-src="{{shits.img}}" alt="">
-            <a href="" class="btn border-none"></a>
+            <a ng-href="{{shits.affiliate_url}}" target="_blank" class="btn border-none"></a>
         </div>
     </div>
     <!-- <a class="btn-floating btn-large waves-effect waves-light red right" style="position: fixed; right: 10px; bottom: 10px;"><i class="material-icons">favorite</i></a> -->
-
+    <!-- <div ng-controller="CarouselDemoCtrl" id="slides_control">
+        <div>
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+              <img ng-src="{{slide.image}}">
+              <div class="carousel-caption">
+                <h4>Slide {{$index+1}}</h4>
+              </div>
+            </slide>
+          </carousel>
+        </div>
+      </div> -->
     <div class="" ng-include="'control/footer.html'"></div>
+    <script type='text/javascript'>
+        var pubID = '46053CL41538';
+    
+        (function(d, t) {
+        var s = document.createElement('script');s.type = 'text/javascript';
+        s.async = true;s.src = (document.location.protocol == 'https:' ? 'https://cdn0.cuelinks.com/js/' : 'http://cdn0.cuelinks.com/js/')  + 'cuelinksv1.js';
+        document.getElementsByTagName('body')[0].appendChild(s);
+        }());
+    </script>
+                        
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
     <script src="./js/angular.min.js"></script>
     <script src="./js/angular-route.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
-    <script src="./js/angular-animate.min.js"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
     <script src="./js/jq.js"></script>
     <script src="./js/mat.js"></script>
     <script src="./js/wip-image-zoom.min.js"></script>

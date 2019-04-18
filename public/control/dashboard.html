@@ -8,36 +8,32 @@
                 </div>
             </div>
             
-        <div class="carousel carousel-slider z-2" style="top: -115px; height:500px;">
-          <a class="carousel-item" href="#!"><img class="carosel-image" ng-src="{{carosels.one}}" ></a>
-          <a class="carousel-item" href="#!"><img class="carosel-image" ng-src="{{carosels.two}}" ></a>
-          <a class="carousel-item" href="#!"><img class="carosel-image" ng-src="{{carosels.three}}" ></a>
-          <a class="carousel-item" href="#!"><img class="carosel-image" ng-src="{{carosels.four}}" ></b>
-          <b class="carousel-item" href="#!"><img class="carosel-image" ng-src="{{carosels.five}}" ></a>
+        <div class="carousel carousel-slider z-2" style="top: -122px; height:510px;">
+          <a ng-repeat="item in carosels" class="carousel-item" ng-href="{{item.link}}"><img style=" height:510px;" class="carosel-image" ng-src="{{item.img}}" ></a>
         </div>
+        <a href="#!/Mens/T-Shirt">
         <div class="placeholder-img">
-            <img src="./../assets/page/img3.jpg" alt="">
-        </div>
+            <img ng-src="{{carosels[0].img}}" alt="">
+        </div></a>
         <div class="mini-dress-catogery">
         
             <div>
-                <a ng-click="scrollToTop()" href="#!/Detail/5c6c011f3dbfb64a8e8c320e"> <img src="./../assets/page/mini-banner/womens1.jpg" alt=""></a>
+                <a ng-click="scrollToTop()" href="#!/Detail/5c6c011f3dbfb64a8e8c320e"> <img src="https://raw.githubusercontent.com/klothingsshop/Klothings/master/mini-banner/girl.jpg" alt=""></a>
             </div>
             <div>
-                <a ng-click="scrollToTop()" href="#!Mens-All"> <img src="./../assets/page/mini-banner/mens1.jpg" alt=""></a>
+                <a ng-click="scrollToTop()" href="#!Mens-All"> <img src="https://raw.githubusercontent.com/klothingsshop/Klothings/master/mini-banner/img2.jpg" alt=""></a>
             </div>
             <div>
-                <a ng-click="scrollToTop()" href="#!Accessories-All"> <img src="./../assets/page/mini-banner/accessories.jpg" alt=""></a>
+                <a ng-click="scrollToTop()" href="#!Accessories-All"> <img src="https://raw.githubusercontent.com/klothingsshop/Klothings/master/mini-banner/img3.jpg" alt=""></a>
             </div>
             <div>
-                <a ng-click="scrollToTop()" href="#!Accessories-All"> <img src="./../assets/page/mini-banner/accessories.jpg" alt=""></a>
+                <a ng-click="scrollToTop()" href="#!Accessories-All"> <img src="https://raw.githubusercontent.com/klothingsshop/Klothings/master/mini-banner/img4.jpg" alt=""></a>
             </div>
         
         </div>
         
-        <br>
-        <h4 class="center def-font-cap capetelize" >shop by category</h4>
-        <br>
+        <!-- <h4 class="center def-font-cap capetelize" >shop by category</h4> -->
+        
         
         <div ng-include="'control/catogeries.html'"></div>
         
@@ -46,12 +42,10 @@
             <br>
             <br>
             <br>
-            <h4 class="center def-font-cap">Latest Products</h4>
-            <div class="" ng-controller="allDress">
+            <div class="" ng-controller="allDress" id="product-items">
                 <div class="card-content-wrapper" ng-include="'/control/allDress.html'"></div>
             </div>
         </div>
         
                 
-        <div ng-include="'control/catogeries.html'"></div>
 </div>

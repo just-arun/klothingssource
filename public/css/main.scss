@@ -52,6 +52,7 @@ $defblack:#282828;
 
 // utelity classes
 .defblack{color: $defblack}
+.underline-defcol{text-decoration: underline;}
 .num-font{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
 .carosel-image{height: 500px;}
 .desk-nav-sec{ position: absolute; right: 10px; top: 20px;  }
@@ -208,7 +209,7 @@ img.flip-img-90{height: 40px;width: 120px;transform:rotate(-90deg);}
             text-align: center;
             font-family: $fontCap;
             cursor: pointer;
-            .new-men,.new-women{
+            .new-men,.new-women{ 
                 display: none;
                 z-index: 5;
                 background: rgb(255, 255, 255);
@@ -216,7 +217,7 @@ img.flip-img-90{height: 40px;width: 120px;transform:rotate(-90deg);}
                 left: 50%;
                 transform: translateX(-50%);
                 top: 80px;
-                // width: 100%;
+                // width: 100%; 
                 transition: .5s;
                 padding-bottom: 20px;
                 justify-content: center;
@@ -243,7 +244,8 @@ img.flip-img-90{height: 40px;width: 120px;transform:rotate(-90deg);}
                         height: 30px;
                         text-transform: capitalize;
                         top: -17px;
-                        font-size: 10px;
+                        font-size: 13px;
+                        margin-top: 3px;
                         a{
                             position: absolute;
                             height: 70%;
@@ -312,11 +314,11 @@ img.flip-img-90{height: 40px;width: 120px;transform:rotate(-90deg);}
                                 position: relative;
                                 width: 50%;
                                 li{
-                                    padding: 3px;
+                                    padding: 6px;
                                     padding-bottom: 5px;
                                     text-align: left;
-                                    font-size: 10px;
-                                    margin: 0 10px 0 10px;
+                                    font-size: 13px;
+                                    margin: 3px 10px 0 10px;
                                     min-width: 80px;
                                     text-transform: capitalize;
                                     color: $logocolor;
@@ -427,7 +429,8 @@ img.flip-img-90{height: 40px;width: 120px;transform:rotate(-90deg);}
 .mini-dress-catogery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    @include desk{justify-content: space-between;}
     flex-basis: content;
     position: relative;
     top: -25px;
@@ -597,6 +600,9 @@ img.expanded {
         @include desk{
             margin: 30px;
         }
+        @include tab{
+            max-width: 150px;
+        }
         position: relative;
         margin: 10px;
         transition: 2s;
@@ -686,7 +692,7 @@ aside{
         }
         .cart-images{
             height: 300px;
-            width: 200px;
+            width: 228px;
             @include tab{
                 width: 150px;
                 height: 240px;
@@ -750,6 +756,10 @@ aside{
             p{
                 position: relative;
                 top: 2px;
+                max-height: 46px;
+                font-family: $fontCap;
+                overflow: hidden;
+                font-weight: 700;
             }
         }
         .carte-description:hover{
@@ -956,7 +966,7 @@ footer{
             }
             li{
                 text-transform: capitalize;
-                font-size: 10px;
+                font-size: 13px;
                 a{
                     color: grey;
                 }
@@ -967,6 +977,7 @@ footer{
         }
         p{
             padding: 4px 20px;
+            font-size: 13px;
         }
         font-size: 10px; 
         .tops{
@@ -1043,6 +1054,12 @@ footer{
     top: -140px;
     background: #fff;
     z-index: 1;
+    h5{
+        padding:60px 20px;
+        background: #fff;
+        position: relative;
+        top: -20px;
+    }
     .horizontal-center{
         height: 50px;
         position: relative;
@@ -1115,7 +1132,7 @@ footer{
         border: none;
         border-color: white;
     }
-    &::hover{
+    &:hover{
         border: none;
         border-color: white;
     }
@@ -1170,6 +1187,63 @@ footer{
         color: rgb(0, 0, 0);
     }
 }
+.constrain-to-screen{
+    max-width: 1400px;
+    position: relative;
+    margin: 5px auto;
+}
 
+.h-300px{
+    text-align: center;
+    @include desk{height: 300px; margin-bottom: 30px;}
+    .card-image{
+        @include desk{height: 150px;}
+    }
+    .card-content{
+        @include desk{height: 100px;}
+    }
+    .btn{
+        &:active{
+            background: $logocolor;
+        }
+        &:focus{
+            background: lighten($color: $logocolor, $amount: 5);
+        }
+    }
+}
 
+// .this-is-bullshit{
+//     position: relative;
+//     top: 150px;
+//     right: 10px;
+//     background: #f0f;
+//     height: 50px;
+//     width: 100px;
+//     z-index: 1;
+// }
+
+#modal1{
+    @include desk{
+        text-align: center;
+    }
+    form{
+        @include desk{
+            display: flex;justify-content:center;
+            height: 40px;
+        }
+    }
+}
+.modalone{
+    form{
+        @include desk{align-items: center;}
+        input{
+            position: relative;
+            top: 12px;
+        }
+    }
+}
+
+.new-women{
+    padding-left: 20px;
+}
 

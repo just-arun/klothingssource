@@ -1,0 +1,32 @@
+.container {
+  max-width: 700px;
+}
+
+.container h2 {
+  font-size: 2.4rem;
+}
+
+.container h4 {
+  font-size: 1.6rem;
+}
+
+.container p {
+  line-height: 1.8em;
+  word-spacing: .3em;
+  color: grey;
+  text-justify: newspaper;
+}
+
+footer {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=blog.css.map */

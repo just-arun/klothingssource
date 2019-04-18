@@ -1,4 +1,4 @@
-let app = angular.module('app',['ngRoute','ngAnimate']);
+let app = angular.module('app',['ngRoute']);
 app.config(($routeProvider)=>{
     $routeProvider
     .when('/',{
@@ -36,6 +36,14 @@ app.config(($routeProvider)=>{
         templateUrl:'/control/accessories.html',
         controller:'onlyAccessories'
     })
+    .when('/Accessories/Womens/:catogery',{
+        templateUrl:'/control/accessories.html',
+        controller:'filteredAcessWomens'
+    })
+    .when("/Accessories/Mens/:catogery",{
+        templateUrl:'/control/accessories.html',
+        controller:'filteredAcessMen'
+    })
     .when('/catogery/:cato',{
         templateUrl:'/control/catagoryPage.html',
         controller:'whichCatogery'
@@ -45,7 +53,7 @@ app.config(($routeProvider)=>{
 });
 
 
-app.run(function($rootScope,$http){
+app.run(function($rootScope,$http,$anchorScroll,$location){
     $rootScope.mens;
     $rootScope.womens;
     $rootScope.access;
@@ -123,6 +131,57 @@ app.run(function($rootScope,$http){
             'display':'none'
         });
     }
+    $rootScope.scrolltitems = function () {
+        $location.hash('product-items');
+    }
+    $rootScope.minibanners = [
+        { link:'#!Womens/Tops',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img1.jpg' },
+        { link:'#!Womens/Ethnic',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img2.jpg' },
+        { link:'#!Womens/Tshirt',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img3.jpg' },
+        { link:'#!Womens/Kurthas',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img4.jpg' },
+        { link:'#!Womens/Camisoles',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img5.jpg' },
+        { link:'#!Womens/Bridal',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img6.jpg' },
+        { link:'#!Womens/Skirts',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img7.jpg' },
+        { link:'#!Womens/Jeans',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img8.jpg' },
+        { link:'#!Womens/Jeggings',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img9.jpg' },
+        { link:'#!/Womens/Lingeris',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/Womens/img10.jpg' },
+    ];
+    $rootScope.minibannersMen = [
+        { link:'#!Mens/T-Shirt',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img1.jpg' },
+        { link:'#!Mens/Shirt',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img2.jpg' },
+        { link:'#!Mens/Hoodies',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img3.jpg' },
+        { link:'#!Mens/Kurtas',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img4.jpg' },
+        { link:'#!Mens/Jeans',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img5.jpg' },
+        { link:'#!Mens/Pants',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img6.jpg' },
+        { link:'#!Mens/Shorts',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img7.jpg' },
+        { link:'#!Mens/Track',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img8.jpg' },
+        { link:'#!Mens/Vests',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img9.jpg' },
+        { link:'#!Mens/Briefs',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men/img10.jpg' },
+    ];
+    $rootScope.minibannersAccess = [
+        { link:'#!Accessories/Mens/Cufflinks',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img1.jpg' },
+        { link:'#!Accessories/Mens/Sunglass',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img2.jpg' },
+        { link:'#!Accessories/Mens/Shoes',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img3.jpg' },
+        { link:'#!Accessories/Mens/Sandals',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img4.jpg' },
+        { link:'#!Accessories/Mens/Black-pack',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img5.jpg' },
+        { link:'#!Accessories/Mens/Ring',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img6.jpg' },
+        { link:'#!Accessories/Mens/Wallets',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img7.jpg' },
+        { link:'#!Accessories/Mens/Caos-Hats',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img8.jpg' },
+        { link:'#!Accessories/Mens/Keychain',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img9.jpg' },
+        { link:'#!Accessories/Mens/Belts',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/men%20accessory/img10.jpg' },
+    ];
+    $rootScope.minibannersAccess2 = [
+        { link:'#!Accessories/Womens/Handbags',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img1.jpg' },
+        { link:'#!Accessories/Womens/Trolleys',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img2.jpg' },
+        { link:'#!Accessories/Womens/Sunglass',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img3.jpg' },
+        { link:'#!Accessories/Womens/Belts',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img4.jpg' },
+        { link:'#!Accessories/Womens/Wallets',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img5.jpg' },
+        { link:'#!Accessories/Womens/Cliper',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img6.jpg' },
+        { link:'#!Accessories/Womens/Earrings',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img7.jpg' },
+        { link:'#!Accessories/Womens/Necklaces',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img8.jpg' },
+        { link:'#!Accessories/Womens/Rings',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img9.jpg' },
+        { link:'#!Accessories/Womens/Stoles',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/catagery/womens%20accessory/img10.jpg' },
+    ];
 });
 
 
@@ -168,20 +227,38 @@ app.controller('womensCatogery',function($scope,$rootScope,$http,$routeParams){
     
     $http.get(`/client/api/request/data/womens/${catagory}`)
         .then((data)=>{
-            
             $scope.womens = data.data;
         });
 });
 
 // for accessories route
 
-app.controller('onlyAccessories',function($scope,$rootScope,$http){
+app.controller('onlyAccessories',function($scope,$rootScope,$http,$routeParams){
+    let catogeries = $routeParams.catogery;
     $scope.thisPage = [ "#!Accessories-All", "Accessories" ];
-    $http.get(`/client/api/request/data/allData`)
+    $http.get(`/client/api/request/data/accessories`)
         .then((data)=>{
-            
-            $rootScope.mens = data.data.menData;
+            $rootScope.access = data.data;
         });
+
+});
+
+app.controller('filteredAcessWomens',function ($scope,$http,$routeParams) {
+    let catogeries = $routeParams.catogery;
+    $scope.thisPage = [ "#!/Accessories-All" , "#!/Accessories-All" ];
+    $http.get(`/client/api/request/data/accessories/womens/${catogeries}`)
+    .then((data)=>{
+        $scope.access = data.data;
+    })
+});
+
+app.controller('filteredAcessMen',function ($scope,$http,$routeParams) {
+    let catogeries = $routeParams.catogery;
+    $scope.thisPage = [ "#!/Accessories-All" , "#!/Accessories-All" ];
+    $http.get(`/client/api/request/data/accessories/men/${catogeries}`)
+    .then((data)=>{
+        $scope.access = data.data;
+    })
 });
 
 
@@ -228,21 +305,19 @@ app.controller('Dressfilter',function($scope,$rootScope,$http){
     $scope.shit="test123"
 
     if ( window.innerWidth > 600) {
-        $rootScope.carosels = {
-            one:'/assets/page/carosel/desk/img1.jpg',
-            two:'/assets/page/carosel/desk/img2.jpg',
-            three:'/assets/page/carosel/desk/img3.jpg',
-            four:'/assets/page/carosel/desk/img4.jpg',
-            five:'/assets/page/carosel/desk/img5.jpg'
-        };
+        $rootScope.carosels = [
+            {link:'#!Mens/T-Shirt',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/desk/img1.jpg'},
+            {link:'#!Womens/Ethnic',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/desk/img2.jpg'},
+            {link:'#!Womens/Accessories/Earrings',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/desk/img3.jpg'},
+            {link:'#!Mens/Accessories/Shoes',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/desk/img4.jpg'},
+        ];
     } else {
-        $rootScope.carosels = {
-            one:'/assets/page/carosel/mobi/img1.jpg',
-            two:'/assets/page/carosel/mobi/img2.jpg',
-            three:'/assets/page/carosel/mobi/img3.jpg',
-            four:'/assets/page/carosel/mobi/img4.jpg',
-            five:'/assets/page/carosel/mobi/img5.jpg'
-        };
+        $rootScope.carosels = [
+            {link:'#!Mens/T-Shirt',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/mobi/img1.jpg'},
+            {link:'#!Womens/Ethnic',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/mobi/img2.jpg'},
+            {link:'#!Womens/Accessories/Earrings',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/mobi/img3.jpg'},
+            {link:'#!Mens/Accessories/Shoes',img:'https://raw.githubusercontent.com/klothingsshop/Klothings/master/carosel/mobi/img4.jpg'},
+        ];
     }
 
 
@@ -384,6 +459,7 @@ app.controller('footer-ctrl',function($scope,$http){
                         tog.removeClass('tramslate-0');
                     }, 3000);
                 }
+                console.log(data);
         });
     }
 
@@ -583,18 +659,17 @@ app.controller('coupensPage',function ($scope,$http,$rootScope){
         "/assets/page/brand-logo/wildcaraft.png",
         "/assets/page/brand-logo/zivame.png"
     ];
-    
+    $rootScope.offersDeals = [];
     $scope.data;
-    $http.get('/client/api/request/data/coupens')
+    $http.get('/client/api/request/data/offers-and-coupens')
         .then((data)=>{
-            
-            $scope.data = data.data;
+            $rootScope.offersDeals = data.data.offers;
+            $scope.data = $rootScope.offersDeals;
         });
         function deals(ofwhich){
             this.shit = ofwhich;
             $http.get(`/client/api/request/data/coupens/${this.shit}`)
             .then(data=>{
-                
                 $scope.data = data.data;
             });
         }
@@ -677,3 +752,27 @@ app.filter('sizeFilter',function(){
     }
 });
 
+// app.controller('CarouselDemoCtrl',function($scope){
+
+// });
+
+
+// carosel 
+
+// function CarouselDemoCtrl($scope){
+//   $scope.myInterval = 3000;
+//   $scope.slides = [
+//     {
+//       image: 'http://lorempixel.com/400/200/'
+//     },
+//     {
+//       image: 'http://lorempixel.com/400/200/food'
+//     },
+//     {
+//       image: 'http://lorempixel.com/400/200/sports'
+//     },
+//     {
+//       image: 'http://lorempixel.com/400/200/people'
+//     }
+//   ];
+// }

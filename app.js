@@ -100,6 +100,7 @@ let user = require('./routes/user');
 let sendData = require('./routes/sendData');
 let mails = require('./routes/mailR');
 let coupens = require('./routes/coupensR');
+let blog = require('./routes/blog');
 app.use('/admin/users/api/mens',mens);
 app.use('/admin/users/api/womens',womens);
 app.use('/admin/users/api/accessories',accessories);
@@ -108,9 +109,10 @@ app.use('/client/api/request/data',sendData);
 app.use('/admin/users/api/email',mails);
 app.use('/admin/users/api/deals',deals);
 app.use('/admin/users/api/coupens',coupens);
+app.use('/blog',blog);
 
 
-let PORT = process.env.PORT || 8100;
+let PORT = process.env.PORT || 8000;
 
 app.listen(PORT,()=>console.log(`lictening to port ${PORT}...`));
 

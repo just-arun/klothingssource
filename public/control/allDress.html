@@ -1,7 +1,7 @@
 
 <p><h4 class=" def-font-cap">Women</h4> <br></p>
 <br>
-<div class="card-content-wrapper2" ng-repeat=" ant in womens | filter: searcBoxOne | orderBy:sortBy | limitTo: 24">
+<div class="card-content-wrapper2" ng-repeat=" ant in womens | filter: searcBoxOne | orderBy:sortBy | limitTo: 12">
     <a href="#!Detail/{{ant._id}}"  ng-click="scrollToTop()"> <div class="cart-images">
         <img class="im-1" ng-src="{{ant.img[0]}}" alt="">
         <img class="im-2" ng-src="{{ant.img[1]}}" alt="">
@@ -18,7 +18,7 @@
 <p class=" fullWidth">
     <h4 class="def-font-cap">Men</h4>
 </p>
-<div class="card-content-wrapper2"  ng-repeat=" ant in mens | filter: searcBoxOne | orderBy:sortBy | limitTo: 24 ">
+<div class="card-content-wrapper2"  ng-repeat=" ant in mens | filter: searcBoxOne | orderBy:sortBy | limitTo: 12 ">
     <a href="#!Detail/{{ant._id}}"  ng-click="scrollToTop()"> <div class="cart-images">
         <img class="im-1" ng-src="{{ant.img[0]}}" alt="">
         <img class="im-2" ng-src="{{ant.img[1]}}" alt="">
@@ -33,11 +33,11 @@
     </div>
 </div>
 <p class=" fullWidth">
-    <h4 class="def-font-cap">Mens/Womens Accessories</h4>
+    <h4 class="def-font-cap">Accessories</h4>
     <br>
 </p>
 <br>
-<div class="card-content-wrapper2"  ng-repeat=" ant in access | filter: searcBoxOne | orderBy:sortBy | limitTo: 24">
+<div class="card-content-wrapper2"  ng-repeat=" ant in access | filter: searcBoxOne | orderBy:sortBy | limitTo: 12">
     <a href="#!Detail/{{ant._id}}"  ng-click="scrollToTop()"> <div class="cart-images">
         <img class="im-1" ng-src="{{ant.img[0]}}" alt="">
         <img class="im-2" ng-src="{{ant.img[1]}}" alt="">

@@ -75,6 +75,41 @@ router.get('/womens/:catagory',(req,res)=>{
 });
 
 
+router.get('/accessories',(req,res)=>{
+    Accessories.find({},(err,data)=>{
+        if (err) {
+            console.log(err);
+        } else res.send(data);
+    })
+});
+
+router.get('/accessories/womens/:catagory',(req,res)=>{
+    let catogers = req.params.catagory;
+    Accessories.find({gender:"female",itemCatogery:catogers},(err,data)=>{
+        if (err) {
+            console.log(err);
+        } else {
+            console.log({gender:"female",itemCatogery:catogers});
+            res.send(data);
+        }
+    })
+});
+
+
+router.get('/accessories/men/:catagory',(req,res)=>{
+    let catogers = req.params.catagory;
+    Accessories.find({gender:"female",itemCatogery:catogers},(err,data)=>{
+        if (err) {
+            console.log(err);
+        } else {
+            console.log({gender:"male",itemCatogery:catogers});
+            res.send(data);
+        }
+    })
+});
+
+
+
 // send data for deals page
 router.get('/deals',(req,res)=>{
     Deals.find({},(err,data)=>{
@@ -143,15 +178,15 @@ router.get('/offers-and-coupens',(req,res)=>{
 
     request({
     method: 'GET',
-    url: 'https://private-anon-6ed5fff253-cuelinks.apiary-mock.com/api/v2/offers.json',
+    url: 'https://www.cuelinks.com/api/v2/offers.json',
     headers: {
         'Authorization': 'Token token=DsELJbTPRNwn6N79BDHafoo6Dryeq5NDwRkPb_AimMQ',
         'Content-Type': 'application/json'
-    }}, function (err, res, body) {
-    // console.log('Status:', response.statusCode);
-    // console.log('Headers:', JSON.stringify(response.headers));
-    // console.log('Response:', body);
-    console.log(res.body);
+    }}, function (err, resp, body) {
+    let data = [];
+    data = resp.body;
+    console.log(data);
+    res.send(data);
     if (err) {
         console.log(err);
     }
@@ -206,7 +241,7 @@ router.post('/sendMail/:mail',(req,res)=>{
     transporter.sendMail(mailOptions,(err,info)=>{
         if(err) {
             console.log(err);
-            res.send('naa');
+            res.send(err);
         }
         else{
             console.log(info);

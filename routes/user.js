@@ -12,14 +12,15 @@ route.get('/login',(req,res)=>{
     res.render('login');
 })
 
-route.get('/regester',ensureAuthenticated,(req,res)=>{
-    let errors = [];
-    if (req.user.email == "dhakshana29dm@gmail.com" || req.user.email == "karthicknaresh365@gmail.com") {
+route.get('/regester',(req,res)=>{
+    // let errors = [];
+    // if (req.user.email == "dhakshana29dm@gmail.com" || req.user.email == "karthicknaresh365@gmail.com") {
+    //     res.render('regester');
+    // } else {
+    //     errors.push('You are not authorised');
+    //     res.render('login');
+    // }
         res.render('regester');
-    } else {
-        errors.push('You are not authorised');
-        res.render('login');
-    }
 });
 
 route.post('/regester',(req,res)=>{
